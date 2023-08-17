@@ -6,51 +6,53 @@ import { Email, LocationOn, GitHub, LinkedIn } from '@mui/icons-material';
 const Contact = () => {
   return (
     <div className="d-flex container justify-content-center align-items-center round" style={{ background: 'linear-gradient(to bottom, grey, darkgrey)', borderRadius: '50px', width: '100%', marginTop: "50px", marginBottom: "50px"}}>
-    <div className="container-fluid p-5" style={{ color: 'white' }}>
-      <h2>Contact Me</h2>
-      <form>
-        <div className="mb-3">
-          <input type="text" className="form-control" placeholder="Name (Example: John Smith)" style={{ borderRadius: '10px', borderColor: 'darkblue' }} />
-        </div>
-        <div className="mb-3">
-          <input type="email" className="form-control" placeholder="Email (Example: john@example.com)" style={{ borderRadius: '10px', borderColor: 'darkblue' }} />
-        </div>
-        <div className="mb-3">
-          <textarea className="form-control" rows={4} placeholder="Type your message..." style={{ borderRadius: '10px', borderColor: 'darkblue' }} defaultValue=""></textarea>
-        </div>
-        <button type="submit" className="btn btn-primary btn-lg">Send</button>
-  </form>
-</div>
-      <div className="col-md-6 d-flex flex-column align-items-start">
-            <div className="d-flex align-items-center mb-3">
-              <Email sx={{ fontSize: 24, marginRight: 8 }} />
-              <a href="mailto:gandhi@berkeley.edu" style={{ color: 'white', textDecoration: 'none' }}>gandhi@berkeley.edu</a>
-            </div>
-            <div className="d-flex align-items-center mb-3">
-              <LocationOn sx={{ fontSize: 24, marginRight: 8 }} />
-              Berkeley, California
-            </div>
-            <div className="d-flex">
-              <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer" className="mx-1" style={{ color: 'white', textDecoration: 'none' }}>
-                <GitHub sx={{ fontSize: 32 }} />
-              </a>
-              <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer" className="mx-1" style={{ color: 'white', textDecoration: 'none' }}>
-                <LinkedIn sx={{ fontSize: 32 }} />
-              </a>
-            </div>
-
+      <div className="container-fluid p-5" style={{ color: 'white' }}>
+        <h2>Contact Me</h2>
+        <form>
+          <div className="mb-3">
+            <input type="text" className="form-control" placeholder="Name (Example: John Smith)" style={{ borderRadius: '10px', borderColor: 'darkblue', fontSize: '18px', padding: '10px' }} />
           </div>
-          <div className="col-md-3 d-flex align-items-center">
+          <div className="mb-3">
+            <input type="email" className="form-control" placeholder="Email (Example: john@example.com)" style={{ borderRadius: '10px', borderColor: 'darkblue', fontSize: '18px', padding: '10px' }} />
+          </div>
+          <div className="mb-3">
+            <textarea className="form-control" rows={4} placeholder="Type your message..." style={{ borderRadius: '10px', borderColor: 'darkblue', fontSize: '18px', padding: '10px' }} defaultValue=""></textarea>
+          </div>
+          <button type="submit" className="btn btn-primary btn-lg">Send</button>
+        </form>
+      </div>
+      <div className="col-md-6 d-flex flex-column justify-content-center align-items-center" >
+        <div className="d-flex align-items-center mb-3">
+          <a href="mailto:gandhi@berkeley.edu" style={{ color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }}>
+            <Email sx={{ fontSize: 24, marginRight: 8 }} style={{ color: 'white' }}/>
+            gandhi@berkeley.edu
+          </a>
+        </div>
+        <div className="d-flex align-items-center mb-3" style={{ color: 'white', fontSize: '18px' }}>
+          <LocationOn sx={{ fontSize: 24, marginRight: 8 }} />
+          Berkeley, California
+        </div>
+        <div className="d-flex justify-content-center">
+          <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer" className="mx-1" style={{ color: 'white', textDecoration: 'none', fontSize: '24px' }}>
+            <GitHub sx={{ fontSize: 32 }} />
+          </a>
+          <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer" className="mx-1" style={{ color: 'white', textDecoration: 'none', fontSize: '24px' }}>
+            <LinkedIn sx={{ fontSize: 32 }} />
+          </a>
+        </div>
+      </div>
+      <div className="col-md-3 d-flex align-items-center">
         <img
           src="code-solid.png"
           alt="Tech Image"
           style={{ maxWidth: '75%', height: 'auto' }}
         />
       </div>
-        </div>
-
+    </div>
   );
 };
+
+
 
 
 
