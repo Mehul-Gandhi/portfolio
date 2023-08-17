@@ -6,19 +6,19 @@ import { Email, LocationOn, GitHub, LinkedIn } from '@mui/icons-material';
 const Contact = () => {
   return (
     <div className="d-flex container justify-content-center align-items-center round" style={{ background: 'linear-gradient(to bottom, grey, darkgrey)', borderRadius: '50px', width: '100%', marginTop: "50px", marginBottom: "50px"}}>
-  <div className="container-fluid p-5" style={{ color: 'white'}}>
-  <h2>Contact Me</h2>
-  <form className="d-flex flex-column align-items-end">
-    <div className="mb-3" >
-      <input type="text" className="form-control" placeholder="Name (Example: John Smith)" style={{ borderRadius: '10px', borderColor: 'darkblue', width: '100%', maxWidth: '400px', marginRight: '20px' }} />
-    </div>
-    <div className="mb-3">
-      <input type="email" className="form-control" placeholder="Email (Example: john@example.com)" style={{ borderRadius: '10px', borderColor: 'darkblue', width: '100%', maxWidth: '400px', marginRight: '20px' }} />
-    </div>
-    <div className="mb-3">
-      <textarea className="form-control" rows={4} placeholder="Type your message..." style={{ borderRadius: '10px', borderColor: 'darkblue', width: '100%', maxWidth: '400px'}} defaultValue=""></textarea>
-    </div>
-    <button type="submit" className="btn btn-primary btn-lg align-self-start">Send</button>
+    <div className="container-fluid p-5" style={{ color: 'white' }}>
+      <h2>Contact Me</h2>
+      <form>
+        <div className="mb-3">
+          <input type="text" className="form-control" placeholder="Name (Example: John Smith)" style={{ borderRadius: '10px', borderColor: 'darkblue' }} />
+        </div>
+        <div className="mb-3">
+          <input type="email" className="form-control" placeholder="Email (Example: john@example.com)" style={{ borderRadius: '10px', borderColor: 'darkblue' }} />
+        </div>
+        <div className="mb-3">
+          <textarea className="form-control" rows={4} placeholder="Type your message..." style={{ borderRadius: '10px', borderColor: 'darkblue' }} defaultValue=""></textarea>
+        </div>
+        <button type="submit" className="btn btn-primary btn-lg">Send</button>
   </form>
 </div>
       <div className="col-md-6 d-flex flex-column align-items-start">
