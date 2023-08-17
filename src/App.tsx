@@ -5,7 +5,7 @@ import About from "./About"
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Navbar';
-
+import Footer from "./Footer";
 function App() {
   return (
     <Router>
@@ -15,6 +15,7 @@ function App() {
       {/* <Route path="/upload" element={<Upload />} /> */}
 
     </Routes>
+    <Footer />
   </Router>
   );
 }

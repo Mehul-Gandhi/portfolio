@@ -1,26 +1,54 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
+import { Email, LocationOn, GitHub, LinkedIn } from '@mui/icons-material'; 
 
 
 const Contact = () => {
   return (
     <div className="d-flex container justify-content-center align-items-center round" style={{ background: 'linear-gradient(to bottom, grey, darkgrey)', borderRadius: '50px', width: '100%', marginTop: "50px", marginBottom: "50px"}}>
-      <div className="container-fluid p-5" style={{ color: 'white' }}>
-        <h2>Contact Me</h2>
-        <form>
-          <div className="mb-3">
-            <input type="text" className="form-control" placeholder="Name (Example: John Smith)" style={{ borderRadius: '10px', borderColor: 'darkblue' }} />
-          </div>
-          <div className="mb-3">
-            <input type="email" className="form-control" placeholder="Email (Example: john@example.com)" style={{ borderRadius: '10px', borderColor: 'darkblue' }} />
-          </div>
-          <div className="mb-3">
-            <textarea className="form-control" rows={4} placeholder="Type your message..." style={{ borderRadius: '10px', borderColor: 'darkblue' }} defaultValue=""></textarea>
-          </div>
-          <button type="submit" className="btn btn-primary btn-lg">Send</button>
-        </form>
-      </div>
+  <div className="container-fluid p-5" style={{ color: 'white'}}>
+  <h2>Contact Me</h2>
+  <form className="d-flex flex-column align-items-end">
+    <div className="mb-3" >
+      <input type="text" className="form-control" placeholder="Name (Example: John Smith)" style={{ borderRadius: '10px', borderColor: 'darkblue', width: '100%', maxWidth: '400px', marginRight: '20px' }} />
     </div>
+    <div className="mb-3">
+      <input type="email" className="form-control" placeholder="Email (Example: john@example.com)" style={{ borderRadius: '10px', borderColor: 'darkblue', width: '100%', maxWidth: '400px', marginRight: '20px' }} />
+    </div>
+    <div className="mb-3">
+      <textarea className="form-control" rows={4} placeholder="Type your message..." style={{ borderRadius: '10px', borderColor: 'darkblue', width: '100%', maxWidth: '400px'}} defaultValue=""></textarea>
+    </div>
+    <button type="submit" className="btn btn-primary btn-lg align-self-start">Send</button>
+  </form>
+</div>
+      <div className="col-md-6 d-flex flex-column align-items-start">
+            <div className="d-flex align-items-center mb-3">
+              <Email sx={{ fontSize: 24, marginRight: 8 }} />
+              <a href="mailto:gandhi@berkeley.edu" style={{ color: 'white', textDecoration: 'none' }}>gandhi@berkeley.edu</a>
+            </div>
+            <div className="d-flex align-items-center mb-3">
+              <LocationOn sx={{ fontSize: 24, marginRight: 8 }} />
+              Berkeley, California
+            </div>
+            <div className="d-flex">
+              <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer" className="mx-1" style={{ color: 'white', textDecoration: 'none' }}>
+                <GitHub sx={{ fontSize: 32 }} />
+              </a>
+              <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer" className="mx-1" style={{ color: 'white', textDecoration: 'none' }}>
+                <LinkedIn sx={{ fontSize: 32 }} />
+              </a>
+            </div>
+
+          </div>
+          <div className="col-md-3 d-flex align-items-center">
+        <img
+          src="code-solid.png"
+          alt="Tech Image"
+          style={{ maxWidth: '75%', height: 'auto' }}
+        />
+      </div>
+        </div>
+
   );
 };
 
@@ -60,7 +88,7 @@ const AboutMe = () => {
             </p>
             <div className="d-flex">
               <a href="/resume" className="btn mx-1 btn-primary btn-lg" type="button">Resume</a>
-              <a href="mailto:your-email@example.com?subject" className="btn mx-1 btn-light btn-lg" type="button">Contact</a>
+              <a href="mailto:gandhi@berkeley.edu?subject" className="btn mx-1 btn-light btn-lg" type="button">Contact</a>
             </div>
           </div>
           <div className="col-md-4 d-flex justify-content-center align-items-start">
