@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import { Email, LocationOn, GitHub, LinkedIn } from '@mui/icons-material'; 
-
+import "./App.css";
 
 const Contact = () => {
   return (
@@ -22,20 +22,23 @@ const Contact = () => {
         </form>
       </div>
       <div className="col-md-6 d-flex flex-column justify-content-center align-items-center" >
-        <div className="d-flex align-items-center mb-3">
-          <a href="mailto:gandhi@berkeley.edu" style={{ color: '#FFD700', textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }}>
-            <Email sx={{ fontSize: 36, marginRight: 8 }} style={{ color: '#FFD700' }}/>
+      <div className="d-flex align-items-center mb-3 email-link" style={{ fontSize: '18px' }}>
+          <a href="mailto:gandhi@berkeley.edu" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
+            <Email sx={{ fontSize: 36, marginRight: 8 }} className="email-icon" />
             gandhi@berkeley.edu
           </a>
         </div>
-        <div className="d-flex align-items-center mb-3" style={{ color: '#FFD700', fontSize: '18px' }}>
-          <LocationOn sx={{ fontSize: 36, marginRight: 8 }} style={{color: "#FFD700"}}/>
+        <div className="d-flex align-items-center mb-3" style={{  fontSize: '18px' }}>
+          <a href="https://www.google.com/maps/place/Berkeley,+CA/@37.8712241,-122.3426374,13z/data=!3m1!4b1!4m6!3m5!1s0x808579363a8549d3:0x94ea1595a675e993!8m2!3d37.8715226!4d-122.273042!16zL20vMDFqcjY?entry=ttu"
+          style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
+          <LocationOn sx={{ fontSize: 36, marginRight: 8 }} className="email-icon"/>
           Berkeley, California
+          </a>
         </div>
         <div className="d-flex justify-content-center">
-          <a href="https://github.com/Mehul-Gandhi" target="_blank" rel="noopener noreferrer" className="mx-1" style={{ color: '#FFD700', textDecoration: 'none', fontSize: '24px' }}>
-            <GitHub sx={{ fontSize: 60 }} style={{color: "#FFD700"}} />
-          </a>
+        <a href="https://github.com/Mehul-Gandhi" target="_blank" rel="noopener noreferrer" className="mx-1" style={{ color: '#FFD700', textDecoration: 'none', fontSize: '24px' }}>
+    <GitHub sx={{ fontSize: 60 }} style={{ color: "#FFD700" }} />
+  </a>
           <a href="https://www.linkedin.com/in/mehul-gandhi/" target="_blank" rel="noopener noreferrer" className="mx-1" style={{ color: '#FFD700', textDecoration: 'none', fontSize: '24px' }}>
             <LinkedIn sx={{ fontSize: 60 }} style={{color: "#FFD700"}} />
           </a>

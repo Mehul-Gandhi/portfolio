@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.email-link {
+  color: #FFD700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.email-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.email-link:hover .email-icon {
+  color: white;
+}
+
+/* Apply hover effect to location link */
+.location-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Apply hover effect to GitHub and LinkedIn links */
+.social-link:hover {
+  color: white;
+  text-decoration: none;
+}
