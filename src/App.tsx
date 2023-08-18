@@ -6,13 +6,14 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Navbar';
 import Footer from "./Footer";
+import Resume from "./Resume"
 function App() {
   return (
     <Router>
       <Navbar />
     <Routes>
       <Route index element={<About />} />
-      {/* <Route path="/upload" element={<Upload />} /> */}
+      <Route path="/resume" element={<Resume />} />
 
     </Routes>
     <Footer />

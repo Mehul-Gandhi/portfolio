@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import { Email, LocationOn, GitHub, LinkedIn } from '@mui/icons-material'; 
 import "./App.css";
-import 'particles.js/particles';
+import Particles from "react-tsparticles"; 
+import { loadFull } from "tsparticles"; 
 
 const Contact = () => {
   return (
@@ -24,14 +24,17 @@ const Contact = () => {
       </div>
       <div className="col-md-6 d-flex flex-column justify-content-center align-items-center" >
       <div className="d-flex align-items-center mb-3 email-link" style={{ fontSize: '18px' }}>
-          <a href="mailto:gandhi@berkeley.edu" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
+          <a href="mailto:gandhi@berkeley.edu" 
+          target="_blank" rel="noopener noreferrer" 
+          style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
             <Email sx={{ fontSize: 36, marginRight: 8 }} className="email-icon" />
             gandhi@berkeley.edu
           </a>
         </div>
         <div className="d-flex align-items-center mb-3" style={{  fontSize: '18px' }}>
           <a href="https://www.google.com/maps/place/Berkeley,+CA/@37.8712241,-122.3426374,13z/data=!3m1!4b1!4m6!3m5!1s0x808579363a8549d3:0x94ea1595a675e993!8m2!3d37.8715226!4d-122.273042!16zL20vMDFqcjY?entry=ttu"
-          style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
+          target="_blank" rel="noopener noreferrer"  style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link"
+          >
           <LocationOn sx={{ fontSize: 36, marginRight: 8 }} className="email-icon"/>
           Berkeley, California
           </a>
@@ -64,116 +67,83 @@ const Contact = () => {
 
 const AboutMe = () => {
 
-  useEffect(() => {
-    particlesJS('particles-js', {
-      particles: {
-        number: {
-          value: 80,
-          density: {
-            enable: true,
-            value_area: 800,
-          },
-        },
-        color: {
-          value: '#FFD700', // Color of the particles
-        },
-        shape: {
-          type: 'circle', // Shape of the particles (circle, edge, triangle, etc.)
-          stroke: {
-            width: 0,
-            color: '#000000',
-          },
-          polygon: {
-            nb_sides: 5,
-          },
-        },
-        opacity: {
-          value: 0.5,
-          random: false,
-          anim: {
-            enable: false,
-            speed: 1,
-            opacity_min: 0.1,
-            sync: false,
-          },
-        },
-        size: {
-          value: 5, // Size of the particles
-          random: true,
-          anim: {
-            enable: false,
-            speed: 40,
-            size_min: 0.1,
-            sync: false,
-          },
-        },
-        line_linked: {
+  const particlesInit = async (engine: any) => {
+    // Initialize the tsParticles instance (engine) here, adding custom shapes or presets
+    await loadFull(engine);
+  };
+  const particlesLoaded = async (container: any) => {
+    // Particles are loaded, you can customize the container if needed
+  };
+  const options = {
+    particles: {
+      number: {
+        value: 20,
+        density: {
           enable: true,
-          distance: 150,
-          color: '#FFD700', // Color of the particle connections
-          opacity: 0.4,
-          width: 1,
-        },
-        move: {
+          area: 800
+        }
+      },
+      color: {
+        value: ["#2EB67D", "#ECB22E", "#E01E5B", "#36C5F0"]
+      },
+      shape: {
+        type: "circle"
+      },
+      opacity: {
+        value: 1
+      },
+      size: {
+        value: { min: 1, max: 8 }
+      },
+      links: {
+        enable: true,
+        distance: 150,
+        color: "#808080",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 5,
+        direction: "none",
+        random: true,
+        straight: false,
+        outModes: "out"
+      }
+    },
+    interactivity: {
+      events: {
+        onHover: {
           enable: true,
-          speed: 6, // Speed of the particles' movement
-          direction: 'none',
-          random: false,
-          straight: false,
-          out_mode: 'out',
-          bounce: false,
-          attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200,
-          },
+          mode: "grab"
         },
+        onClick: {
+          enable: true,
+          mode: "push"
+        }
       },
-      interactivity: {
-        detect_on: 'canvas',
-        events: {
-          onhover: {
-            enable: true,
-            mode: 'grab', // Interaction mode on hover (grab, bubble, repulse, etc.)
-          },
-          onclick: {
-            enable: true,
-            mode: 'push', // Interaction mode on click (push, remove, etc.)
-          },
-          resize: true,
+      modes: {
+        grab: {
+          distance: 140,
+          links: {
+            opacity: 1
+          }
         },
-        modes: {
-          grab: {
-            distance: 140,
-            line_linked: {
-              opacity: 1,
-            },
-          },
-          bubble: {
-            distance: 400,
-            size: 40,
-            duration: 2,
-            opacity: 8,
-            speed: 3,
-          },
-          repulse: {
-            distance: 200,
-            duration: 0.4,
-          },
-          push: {
-            particles_nb: 4,
-          },
-          remove: {
-            particles_nb: 2,
-          },
-        },
-      },
-      retina_detect: true,
-    });
-  }, []);
-  
+        push: {
+          quantity: 4
+        }
+      }
+    }
+  };
+  // @ts-ignore
+  const x =       <Particles options={options} init={particlesInit} />
+
+
+
   return (
-    <div className="container mt-4 p-5 round" style={{ background: 'linear-gradient(to bottom, grey, #000080)', borderRadius: '50px' }}>
+    <div className="container mt-4 p-5 round" style={{ background: 'linear-gradient(to bottom, grey, #000080)', borderRadius: '50px'}}>
+          {x}
+
       <div className="container-fluid py-5" style={{ color: 'white' }}>
         <div className="row">
           <div className="col-md-8">
@@ -214,19 +184,23 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-
+        
       </div>
-
+    
     </div>
   );
 };
 
 const About = () => {
-  return (<div>
+  
+ 
 
+  return (<div>
     <AboutMe />
     <Contact />
-  </div>)
-}
+    
+    </div>
+  );
+};
 
 export default About;
