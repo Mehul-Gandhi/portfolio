@@ -71,11 +71,19 @@ export default function Projects() {
      links: [{name: "Request Access", content: "mailto:gandhi@berkeley.edu"}, {name: "Project spec", content: "https://fa22.cs161.org/proj2/"}],
      date: "December 2022"},
      {name: "Balance", class: "UC Berkeley CalHacks 9.0", description: "Created a web application in a team of 4, where users upload grocery shopping receipts to earn cryptocurrency coins based\
-      on how well their hauls meet nutritional recommendations", details: ["Created a web application in a team of 4, where users upload grocery shopping receipts to earn cryptocurrency coins based on how well their hauls meet nutritional recommendations",
+      on how well their hauls meet nutritional recommendations", details: ["Created a web application in a team of 4, where users upload grocery shopping receipts to earn cryptocurrency coins based on how well their hauls meet nutritional recommendations.",
       "Utilized Tesseract, an Optical Character Recognition API, to convert a grocery receipt into machine-readable text",
       "Designed an algorithm to award users cryptocurrency coins using a food training dataset to classify foods into one of the six food categories and utilized Web3.js and the Solana API to create, sign, and send transactions to the network"]
     , skills: ["HTML", "CSS", "JavaScript", "React", "Jupyter", "Bootstrap"], links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/Balance"}],
-        date: "October 2022", images: ["/balance/balance.jpg"]}
+        date: "October 2022", images: ["/balance/balance.jpg"]},
+        {name: "CourseCraft AI", class: "CS160: User Interface Design and Development", description: "A dynamic tool designed to automate the tedious process of course calendar generation for Computer Science and Data Science courses at UC Berkeley.",
+        details: ["Collaborated with a team of 4 to develop an AI-powered course calendar generator for the UC Berkeley Computer Science Department using the MERN stack, resulting in savings of over 250+ staff hours on logistical calendar setup each semester",
+        "Leveraged Chat GPT API to dynamically generate updated HTML schedules, encompassing refined deadlines, agenda, and dates by web scraping from previous semester's course websites",
+        "Initiated the project with a design phase using Figma, translating conceptual ideas into tangible mockups and interface sketches. Engaged potential users for feedback, iterating on design prototypes to achieve optimal user experience and functionality alignment",
+        "Engaged in a series of in-depth interviews with instructors of CS classes, deriving insights to pinpoint and address prevalent pain points in academic logistical setups"],
+        skills: ["Python", "HTML", "CSS", "JavaScript", "React", "ChatGPT API", "MongoDB", "Flask", "Express"],
+        links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/CourseCraft"}, {name: "Video", content: "https://lnkd.in/gmvS7vwx"}, {name: "Report", content: "https://docs.google.com/document/d/1LNIGYvpZCwR3Cktpjuz_uaFkQW1erYXX81wF6_rRDh4/edit?usp=sharing"}],
+        images: ["/coursecraft/calendar.png", "/coursecraft/compare.png", "/coursecraft/home.png", "/coursecraft/home2.png", "/coursecraft/share.png"]}
     ];
 
     return (
