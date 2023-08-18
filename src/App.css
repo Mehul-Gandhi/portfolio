@@ -75,3 +75,26 @@
   height: 1.5rem;
   margin-right: 0.5rem; /* Add some space to the right of icons */
 }
+
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between cards as needed */
+}
+
+.project-card {
+  flex: 1 1 calc(33.33% - 20px); /* Adjust the percentage and gap as needed */
+  max-width: 400px; /* Limit the maximum width of each card */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}

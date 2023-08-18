@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import "./App.css"
 const ProjectEntry = ({ title, images, description, links, skills, classTaken }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
@@ -12,48 +13,47 @@ const ProjectEntry = ({ title, images, description, links, skills, classTaken })
     };
   
     return (
-      <div className="mb-4 col-12 col-md-6 col-xl-4">
-        <div className="card">
-          <img width="100%" src={images[currentImageIndex]} alt={title} className="card-img-top" />
-          <hr className="my-0" />
-          <div className="card-body">
-            <div className="card-title">
-              <h4 className="text-center" style={{color: 'blue'}}>{title}</h4>
-            </div>
-            {classTaken && (
-              <div>
-                <p><strong>Class:</strong> {classTaken} </p>
+        <div className="project-card">
+          <div className="card">
+            <img src={images[currentImageIndex]} alt={title} className="card-img-top" />
+            <hr className="my-0" />
+            <div className="card-body">
+              <div className="card-title">
+                <h4 className="text-center" style={{ color: 'blue' }}>{title}</h4>
               </div>
-            )}
-            <div>
-              <p>{description}</p>
-            </div>
-            {skills && (
+              {classTaken && (
+                <div>
+                  <p><strong>{classTaken} </strong> </p>
+                </div>
+              )}
               <div>
-                <p><strong>Skills Used:</strong> {skills.join(", ")}</p>
+                <p>{description}</p>
               </div>
-            )}
-            <div className="text-center">
-                {links && links.map((item) => {
-                    return (<a href={item.content} target="_blank" rel="noopener noreferrer" className="btn btn-primary mr-3 py-2 px-4">
+              {skills && (
+                <div>
+                  <p><strong>Skills Used:</strong> {skills.join(", ")}</p>
+                </div>
+              )}
+              <div className="text-center">
+                {links && links.map((item) => (
+                  <a key={item.name} href={item.content} target="_blank" rel="noopener noreferrer" className="btn btn-primary mr-3 py-2 px-4">
                     {item.name}
-                  </a>)
-                })}
-              
-            </div>
-            <div className="text-center">
-              <button onClick={prevImage} className="btn btn-secondary mx-1">&lt; Previous</button>
-              <button onClick={nextImage} className="btn btn-secondary mx-1">Next &gt;</button>
+                  </a>
+                ))}
+              </div>
+              <div className="text-center">
+                <button onClick={prevImage} className="btn btn-secondary mx-1">&lt; Previous</button>
+                <button onClick={nextImage} className="btn btn-secondary mx-1">Next &gt;</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    );
-  };
+      );
+    };
 
 export default function Projects() {
 
-    //name: str, class: str description: str, details: list[str], skills: list[str],
+    //name: str, class: str, description: str, details: list[str], skills: list[str],
     // links: list[dict{name, content}], images: list[str], date
     const projects = [
         {name: "InterView InSight", class: "", description: "A live interview feedback dashboard to enhance students' interview skills powered by ChatGPT", 
@@ -69,23 +69,30 @@ export default function Projects() {
      skills: ["Golang", "Systems Design"],
      images: ["cs161/design1.png", "cs161/design2.png"],
      links: [{name: "Request Access", content: "mailto:gandhi@berkeley.edu"}, {name: "Project spec", content: "https://fa22.cs161.org/proj2/"}],
-     date: "December 2022"}
+     date: "December 2022"},
+     {name: "Balance", class: "UC Berkeley CalHacks 9.0", description: "Created a web application in a team of 4, where users upload grocery shopping receipts to earn cryptocurrency coins based\
+      on how well their hauls meet nutritional recommendations", details: ["Created a web application in a team of 4, where users upload grocery shopping receipts to earn cryptocurrency coins based on how well their hauls meet nutritional recommendations",
+      "Utilized Tesseract, an Optical Character Recognition API, to convert a grocery receipt into machine-readable text",
+      "Designed an algorithm to award users cryptocurrency coins using a food training dataset to classify foods into one of the six food categories and utilized Web3.js and the Solana API to create, sign, and send transactions to the network"]
+    , skills: ["HTML", "CSS", "JavaScript", "React", "Jupyter", "Bootstrap"], links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/Balance"}],
+        date: "October 2022", images: ["/balance/balance.jpg"]}
     ];
 
     return (
-    <div>
-      {projects.map((item) => {
-        return (
-          <ProjectEntry
-            title={item.name}
-            images={item.images}
-            description={item.description}
-            links={item.links}
-            skills={item.skills}
-            classTaken={item.class}
-          />
-        );
-      })}
-    </div>
-  );
+        <div className="projects-container">
+          {projects.map((item) => {
+            return (
+              <ProjectEntry
+                key={item.name}
+                title={item.name}
+                images={item.images}
+                description={item.description}
+                links={item.links}
+                skills={item.skills}
+                classTaken={item.class}
+              />
+            );
+          })}
+        </div>
+      );
 }
