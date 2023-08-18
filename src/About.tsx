@@ -36,11 +36,13 @@ const Contact = () => {
           </a>
         </div>
         <div className="d-flex justify-content-center">
-        <a href="https://github.com/Mehul-Gandhi" target="_blank" rel="noopener noreferrer" className="mx-1" style={{ color: '#FFD700', textDecoration: 'none', fontSize: '24px' }}>
-    <GitHub sx={{ fontSize: 60 }} style={{ color: "#FFD700" }} />
+        <a href="https://github.com/Mehul-Gandhi" target="_blank" rel="noopener noreferrer" 
+        className="mx-1 email-link" 
+        style={{  textDecoration: 'none', fontSize: '24px' }}>
+    <GitHub sx={{ fontSize: 60 }} className="email-icon"/>
   </a>
-          <a href="https://www.linkedin.com/in/mehul-gandhi/" target="_blank" rel="noopener noreferrer" className="mx-1" style={{ color: '#FFD700', textDecoration: 'none', fontSize: '24px' }}>
-            <LinkedIn sx={{ fontSize: 60 }} style={{color: "#FFD700"}} />
+          <a href="https://www.linkedin.com/in/mehul-gandhi/" target="_blank" rel="noopener noreferrer" className="mx-1 email-link" style={{  textDecoration: 'none', fontSize: '24px' }} >
+            <LinkedIn sx={{ fontSize: 60 }} className="email-icon"/> 
           </a>
         </div>
       </div>

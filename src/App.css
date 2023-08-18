@@ -52,6 +52,7 @@
 
 .email-link:hover .email-icon {
   color: white;
+  transform: scale(1.1); 
 }
 
 /* Apply hover effect to location link */
