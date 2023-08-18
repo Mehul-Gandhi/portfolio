@@ -55,14 +55,11 @@
   transform: scale(1.1); 
 }
 
-/* Apply hover effect to location link */
-.location-link:hover {
-  color: white;
-  text-decoration: none;
-}
 
-/* Apply hover effect to GitHub and LinkedIn links */
-.social-link:hover {
-  color: white;
-  text-decoration: none;
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

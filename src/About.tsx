@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import { Email, LocationOn, GitHub, LinkedIn } from '@mui/icons-material'; 
 import "./App.css";
+import 'particles.js/particles';
 
 const Contact = () => {
   return (
@@ -62,6 +63,115 @@ const Contact = () => {
 
 
 const AboutMe = () => {
+
+  useEffect(() => {
+    particlesJS('particles-js', {
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            value_area: 800,
+          },
+        },
+        color: {
+          value: '#FFD700', // Color of the particles
+        },
+        shape: {
+          type: 'circle', // Shape of the particles (circle, edge, triangle, etc.)
+          stroke: {
+            width: 0,
+            color: '#000000',
+          },
+          polygon: {
+            nb_sides: 5,
+          },
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: {
+            enable: false,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false,
+          },
+        },
+        size: {
+          value: 5, // Size of the particles
+          random: true,
+          anim: {
+            enable: false,
+            speed: 40,
+            size_min: 0.1,
+            sync: false,
+          },
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#FFD700', // Color of the particle connections
+          opacity: 0.4,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 6, // Speed of the particles' movement
+          direction: 'none',
+          random: false,
+          straight: false,
+          out_mode: 'out',
+          bounce: false,
+          attract: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 1200,
+          },
+        },
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: {
+            enable: true,
+            mode: 'grab', // Interaction mode on hover (grab, bubble, repulse, etc.)
+          },
+          onclick: {
+            enable: true,
+            mode: 'push', // Interaction mode on click (push, remove, etc.)
+          },
+          resize: true,
+        },
+        modes: {
+          grab: {
+            distance: 140,
+            line_linked: {
+              opacity: 1,
+            },
+          },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 8,
+            speed: 3,
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4,
+          },
+          push: {
+            particles_nb: 4,
+          },
+          remove: {
+            particles_nb: 2,
+          },
+        },
+      },
+      retina_detect: true,
+    });
+  }, []);
+  
   return (
     <div className="container mt-4 p-5 round" style={{ background: 'linear-gradient(to bottom, grey, #000080)', borderRadius: '50px' }}>
       <div className="container-fluid py-5" style={{ color: 'white' }}>
@@ -106,7 +216,6 @@ const AboutMe = () => {
         </div>
 
       </div>
-
 
     </div>
   );
