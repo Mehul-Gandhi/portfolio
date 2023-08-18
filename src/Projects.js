@@ -60,7 +60,7 @@ export default function Projects() {
     const cs61b = "CS61B: Data Structures and Programming Methodology"
     const mail = "mailto:gandhi@berkeley.edu"
     const projects = [
-        {name: "InterView InSight", class: "", description: "A live interview feedback dashboard to enhance students' interview skills powered by ChatGPT", 
+        {name: "InterView InSight", class: "UC Berkeley CalHacks + SkyDeck AI/LLM Hackathon ", description: "A live interview feedback dashboard to enhance students' interview skills powered by ChatGPT", 
         details: ["Collaborated with a team of 3 to create a live interview feedback dashboard, enhancing users' presentation and public speaking skills to enhance users' interview performance and boost confidence",
             "Leveraged the HumeAI API to analyze body language and vocal prosody and the OpenAI API to provide valuable feedback and responses to boost the users' communication skills"]
         , skills: ["React", "Next", "JavaScript", "ChatGPT API"],
@@ -97,7 +97,10 @@ details: ["Replicated the WWII German encryption machine 'Enigma' by building a 
 skills: ["Java"], links: [{name: "Request Access", content: mail}, {name: "Project Spec", content: "https://inst.eecs.berkeley.edu/~cs61b/fa21/materials/proj/proj1/index.html"}], images: ["/enigma/machine.jpg", "/enigma/machine.png", "/enigma/permutation.png"], date: "2021-10-05"},
 {name: "Scheme Interpreter", class: cs61a, description: "Developed an interpreter, written in Python, for a subset of the Scheme language, including the recursive evaluator.", details: ["Developed an interpreter, written in Python, for a subset of the Scheme language, including the recursive evaluator."],
 skills: ["Python", "Scheme"], links: [{name: "Request Access", content: mail}, {name: "Project Spec", content: "https://cs61a.org/proj/scheme/"}],
-images: ["/scheme/scheme.png", "/scheme/interpreter.png", "/scheme/map.png"], date: "2021-08-01"} 
+images: ["/scheme/scheme.png", "/scheme/interpreter.png", "/scheme/map.png"], date: "2021-08-01"},
+ {name: "Pokemon Discord Bot", class: "Side Project", description: "A Pokemon discord bot implemented in python. Contains pokemon minigames, a simple TCG, and anime commands. Uses PostgreSQL.", details: ["A Pokemon discord bot implemented in python. Contains pokemon minigames, a simple TCG, and anime commands. Uses PostgreSQL."],
+skills: ["Python", "SQL"], links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/pokemon-discord-bot"}, {name: "Video", content: "https://youtu.be/FvExsGKHX1M"}], 
+images: ["/discord/bag.png", "/discord/poker.png", "/discord/ttt.png"], date: "2022-03-28"}
     ].sort((a, b) => {
         const dateA = new Date(a.date);
         const dateB = new Date(b.date);
