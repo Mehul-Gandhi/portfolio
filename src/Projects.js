@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css"
 const ProjectEntry = ({ title, images, description, links, skills, classTaken }) => {
@@ -86,9 +87,91 @@ export default function Projects() {
         images: ["/coursecraft/calendar.png", "/coursecraft/compare.png", "/coursecraft/home.png", "/coursecraft/home2.png", "/coursecraft/share.png"]}
     ];
 
-    return (
+    const [selectedSkill, setSelectedSkill] = useState(""); // Step 1
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Define isDropdownOpen
+  
+    const handleSkillClick = (skill) => {
+      setSelectedSkill(skill);
+      setIsDropdownOpen(false); // Close the dropdown when a skill is selected
+    };
+  
+    const toggleDropdown = () => {
+      setIsDropdownOpen((prevIsOpen) => !prevIsOpen);
+    };
+
+
+  
+    // Step 2: Count skill frequency
+    const skillCount = {};
+    projects.forEach((project) => {
+      project.skills.forEach((skill) => {
+        if (skillCount[skill]) {
+          skillCount[skill]++;
+        } else {
+          skillCount[skill] = 1;
+        }
+      });
+    });
+  
+    // Sort skills by frequency in descending order
+    const sortedSkills = Object.keys(skillCount).sort((a, b) => skillCount[b] - skillCount[a]);
+  
+    // Step 3: Create dropdown menu for additional skills
+    const dropdownSkills = sortedSkills.slice(5);
+  
+    const filteredProjects = selectedSkill
+      ? projects.filter((project) => project.skills.includes(selectedSkill))
+      : projects;
+  
+      return (
+        <div>
+          <div className="skill-buttons text-center"> 
+            <button onClick={() => handleSkillClick("")} className={`btn ${selectedSkill === "" ? "btn-primary" : "btn-secondary"}`}>
+              All
+            </button>
+            {sortedSkills.slice(0, 5).map((skill) => ( 
+              <button
+                key={skill}
+                onClick={() => handleSkillClick(skill)}
+                className={`btn ${selectedSkill === skill ? "btn-primary" : "btn-secondary"}`}
+              >
+                {skill}
+              </button>
+            ))}
+            {dropdownSkills.length > 0 && (
+        <div className={`dropdown ${isDropdownOpen ? "show" : ""}`}>
+          <button
+            onClick={toggleDropdown}
+            className="btn btn-secondary dropdown-toggle custom-button"
+            type="button"
+          >
+            More Skills
+          </button>
+          <div
+            className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
+            style={{
+                position: "absolute",
+                top: "100%", // Position the dropdown below the button
+                left: "50%", // Center the dropdown horizontally
+                transform: "translateX(-50%)", // Adjust to center the content
+                zIndex: 1, // Ensure it's above other content
+            }}
+          >
+                  {dropdownSkills.map((skill) => (
+                    <button
+                      key={skill}
+                      onClick={() => handleSkillClick(skill)}
+                      className={`dropdown-item ${selectedSkill === skill ? "active" : ""}`}
+                    >
+                      {skill}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         <div className="projects-container">
-          {projects.map((item) => {
+          {filteredProjects.map((item) => {
             return (
               <ProjectEntry
                 key={item.name}
@@ -102,5 +185,6 @@ export default function Projects() {
             );
           })}
         </div>
-      );
-}
+      </div>
+    );
+  }

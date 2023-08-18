@@ -28,14 +28,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 .email-link {
   color: #FFD700;
@@ -97,4 +90,40 @@
 .card-img-top {
   max-width: 100%;
   height: auto;
+}
+
+.skill-dropdown {
+  text-align: left; /* Align dropdown content to the left */
+}
+
+.skill-dropdown button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.skill-dropdown button:hover {
+  background-color: #f8f9fa; /* Hover color for buttons */
+}
+
+.skill-dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.skill-dropdown button:focus + .dropdown-content {
+  display: block;
+}
+
+.custom-button {
+  background-color: grey; /* Change this to your desired color */
+  color: white; /* Change the text color accordingly */
 }
