@@ -147,14 +147,20 @@ const Resume = () => {
                         Experience</h3>
                         </div>
                         <hr />
-                        <ExperienceEntry role="Software Developer" company="Pioneers in Engineering" time="January 2023 - Present"
+                        <ExperienceEntry role="Software Developer" company={<a href="https://pioneers.berkeley.edu/" target="_blank" rel="noopener noreferrer" 
+                  style={{ textDecoration: 'none'}}>
+                    Pioneers in Engineering</a>}
+                     time="January 2023 - Present"
                          description={["Develop field control software in a team of 8 used for a robotics competition between 15+ high schools",
                         "Maintain UI elements for the scoreboard and allow communication between robots and sensors on the game field",
                         "Create Flask web applications that use the WebSocket protocol for real-time bi-directional communication",
                         "Utilize the Google Sheets API to fetch and push data from Google Sheets, including critical match information"]} 
                          skills="HTML, CSS, JavaScript, Python, Flask"
                          />
-                         <ExperienceEntry role="CS10 Head Teaching Assistant" company="UC Berkeley EECS Department" time="June 2023 - Present"
+                         <ExperienceEntry role="CS10 Head Teaching Assistant" company={<a href="https://cs10.org"
+                          target="_blank" rel="noopener noreferrer" 
+                        style={{ textDecoration: 'none'}}>
+                        UC Berkeley EECS Department </a>}  time="June 2023 - Present"
                          description={["Collaborated with team members to create comprehensive unit tests and to ensure autograder functionality for Python assignments, resulting in an 80% reduction in grading time",
                         "Revised lab assignment specifications to enhance clarity and improve student performance of a class with 250+ undergraduate students, resulting in a 75% increase in average assignment scores and higher student satisfaction"]} 
                          skills="HTML, CSS, JavaScript, Python, Snap!"
@@ -165,7 +171,12 @@ const Resume = () => {
                         "Develop autonomous opponents in abstract strategy games with a focus on balancing memory usage and time"]} 
                          skills="Python, C, HTML, CSS, JavaScript"
                          />
-                         <ExperienceEntry role="Activities Director" company="IEEE (Institute of Electrical and Electronics Engineering) @ UC Berkeley" time="January 2022 - May 2023"
+                         <ExperienceEntry role="Activities Director" company={<a href="https://ieee.berkeley.edu/"
+                          target="_blank" rel="noopener noreferrer" 
+                        style={{ textDecoration: 'none'}}>
+                        IEEE Institute of Electrical and Electronics Engineering @
+                        UC Berkeley </a>} 
+                        time="January 2022 - May 2023"
                          description={["Manage and mentor a team of 4 to plan biweekly social events for the IEEE and EECS community of 150+ members, host collaborative events with other engineering clubs, and advertise events on social media"]}
                          />
 
@@ -189,10 +200,9 @@ const Resume = () => {
                         <div className="row">
     <div className="col-12">
         <h3><br/>
-            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tools" className="svg-inline--fa fa-tools fa-w-16 resume-icon" role="img" 
-            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="currentColor" d="M501.1 395.7L384 278.6c-23.1-23.1-57.6-27.6-85.4-13.9L192 158.1V96L64 0 0 64l96 128h62.1l106.6 106.6c-13.6 27.8-9.2 62.3 13.9 85.4l117.1 117.1c14.6 14.6 38.2 14.6 52.7 0l52.7-52.7c14.5-14.6 14.5-38.2 0-52.7zM331.7 225c28.3 0 54.9 11 74.9 31l19.4 19.4c15.8-6.9 30.8-16.5 43.8-29.5 37.1-37.1 49.7-89.3 37.9-136.7-2.2-9-13.5-12.1-20.1-5.5l-74.4 74.4-67.9-11.3L334 98.9l74.4-74.4c6.6-6.6 3.4-17.9-5.7-20.2-47.4-11.7-99.6.9-136.6 37.9-28.5 28.5-41.9 66.1-41.2 103.6l82.1 82.1c8.1-1.9 16.5-2.9 24.7-2.9zm-103.9 82l-56.7-56.7L18.7 402.8c-25 25-25 65.5 0 90.5s65.5 25 90.5 0l123.6-123.6c-7.6-19.9-9.9-41.6-5-62.7zM64 472c-13.2 0-24-10.8-24-24 0-13.3 10.7-24 24-24s24 10.7 24 24c0 13.2-10.7 24-24 24z">
-                    </path></svg>Classes</h3></div>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" className="svg-inline--fa fa-book-open fa-w-18 resume-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path fill="currentColor" d="M360 0H32A32 32 0 0 0 0 32v416a32 32 0 0 0 32 32h328a24 24 0 0 0 24-24V24a24 24 0 0 0-24-24zM72 160v-48a16 16 0 0 1 16-16h240a16 16 0 0 1 16 16v48zm240 272H72V256h240zm0-112H72v-48h240z"></path>
+            </svg>Classes</h3></div>
                     <hr />
                         <Classes />
                          </div></div>
