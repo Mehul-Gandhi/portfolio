@@ -56,6 +56,9 @@ export default function Projects() {
 
     //name: str, class: str, description: str, details: list[str], skills: list[str],
     // links: list[dict{name, content}], images: list[str], date
+    const cs61a = "CS61A: Structure and Interpretation of Computer Programs";
+    const cs61b = "CS61B: Data Structures and Programming Methodology"
+    const mail = "mailto:gandhi@berkeley.edu"
     const projects = [
         {name: "InterView InSight", class: "", description: "A live interview feedback dashboard to enhance students' interview skills powered by ChatGPT", 
         details: ["Collaborated with a team of 3 to create a live interview feedback dashboard, enhancing users' presentation and public speaking skills to enhance users' interview performance and boost confidence",
@@ -69,23 +72,37 @@ export default function Projects() {
      "Utilized public key encryption and digital signatures to create file sharing invitations, symmetric encryption, asymmetric encryption, and a random byte generator to securely store files on a server"],
      skills: ["Golang", "Systems Design"],
      images: ["cs161/design1.png", "cs161/design2.png"],
-     links: [{name: "Request Access", content: "mailto:gandhi@berkeley.edu"}, {name: "Project spec", content: "https://fa22.cs161.org/proj2/"}],
-     date: "December 2022"},
+     links: [{name: "Request Access", content: mail}, {name: "Project spec", content: "https://fa22.cs161.org/proj2/"}],
+     date: "2022-12-01"},
      {name: "Balance", class: "UC Berkeley CalHacks 9.0", description: "Created a web application in a team of 4, where users upload grocery shopping receipts to earn cryptocurrency coins based\
       on how well their hauls meet nutritional recommendations", details: ["Created a web application in a team of 4, where users upload grocery shopping receipts to earn cryptocurrency coins based on how well their hauls meet nutritional recommendations.",
       "Utilized Tesseract, an Optical Character Recognition API, to convert a grocery receipt into machine-readable text",
       "Designed an algorithm to award users cryptocurrency coins using a food training dataset to classify foods into one of the six food categories and utilized Web3.js and the Solana API to create, sign, and send transactions to the network"]
     , skills: ["HTML", "CSS", "JavaScript", "React", "Jupyter", "Bootstrap"], links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/Balance"}],
-        date: "October 2022", images: ["/balance/balance.jpg"]},
+        date: "2022-10-21", images: ["/balance/balance.jpg"]},
         {name: "CourseCraft AI", class: "CS160: User Interface Design and Development", description: "A dynamic tool designed to automate the tedious process of course calendar generation for Computer Science and Data Science courses at UC Berkeley.",
-        details: ["Collaborated with a team of 4 to develop an AI-powered course calendar generator for the UC Berkeley Computer Science Department using the MERN stack, resulting in savings of over 250+ staff hours on logistical calendar setup each semester",
+        date: "2023-08-12", details: ["Collaborated with a team of 4 to develop an AI-powered course calendar generator for the UC Berkeley Computer Science Department using the MERN stack, resulting in savings of over 250+ staff hours on logistical calendar setup each semester",
         "Leveraged Chat GPT API to dynamically generate updated HTML schedules, encompassing refined deadlines, agenda, and dates by web scraping from previous semester's course websites",
         "Initiated the project with a design phase using Figma, translating conceptual ideas into tangible mockups and interface sketches. Engaged potential users for feedback, iterating on design prototypes to achieve optimal user experience and functionality alignment",
         "Engaged in a series of in-depth interviews with instructors of CS classes, deriving insights to pinpoint and address prevalent pain points in academic logistical setups"],
         skills: ["Python", "HTML", "CSS", "JavaScript", "React", "ChatGPT API", "MongoDB", "Flask", "Express"],
         links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/CourseCraft"}, {name: "Video", content: "https://lnkd.in/gmvS7vwx"}, {name: "Report", content: "https://docs.google.com/document/d/1LNIGYvpZCwR3Cktpjuz_uaFkQW1erYXX81wF6_rRDh4/edit?usp=sharing"}],
-        images: ["/coursecraft/calendar.png", "/coursecraft/compare.png", "/coursecraft/home.png", "/coursecraft/home2.png", "/coursecraft/share.png"]}
-    ];
+        images: ["/coursecraft/calendar.png", "/coursecraft/compare.png", "/coursecraft/home.png", "/coursecraft/home2.png", "/coursecraft/share.png"]},
+        {name: "Gitlet", class: cs61b, description: "A version control system in Java that mimics some of the basic features of Git such as add, commit, remote push, remote pull, merge, and checkout.", details: ["Built a version control system in Java that mimics some of the basic features of Git such as add, commit, remote push, remote pull, merge, and checkout.",
+        "Utilized file management, serialization, and extensive error checking and handling with comprehensive unit tests and integration tests using JUnit library"], skills: ["Java", "Systems Design"],
+    links: [{name: "Request Access", content: mail}, {name: "Project Spec", content: "https://inst.eecs.berkeley.edu/~cs61b/fa21/materials/proj/proj3/index.html"}],
+    images: ["/gitlet/git.png", "/gitlet/process.png", "/gitlet/split.png"], date: "2021-12-01"}, 
+    {name: "Enigma", class: cs61b, description: "Replicated the WWII German encryption machine 'Enigma' by building a generalized simulator that could handle numerous different descriptions of possible initial configurations of the machine and messages to encode or decode.",
+details: ["Replicated the WWII German encryption machine 'Enigma' by building a generalized simulator that could handle numerous different descriptions of possible initial configurations of the machine and messages to encode or decode.", "Built in Java and worked mostly with Java's String, HashMap, ArrayList, and Scanner data structures to handle string manipulation, data mapping required, and file reading for encryption and decryption."],
+skills: ["Java"], links: [{name: "Request Access", content: mail}, {name: "Project Spec", content: "https://inst.eecs.berkeley.edu/~cs61b/fa21/materials/proj/proj1/index.html"}], images: ["/enigma/machine.jpg", "/enigma/machine.png", "/enigma/permutation.png"], date: "2021-10-05"},
+{name: "Scheme Interpreter", class: cs61a, description: "Developed an interpreter, written in Python, for a subset of the Scheme language, including the recursive evaluator.", details: ["Developed an interpreter, written in Python, for a subset of the Scheme language, including the recursive evaluator."],
+skills: ["Python", "Scheme"], links: [{name: "Request Access", content: mail}, {name: "Project Spec", content: "https://cs61a.org/proj/scheme/"}],
+images: ["/scheme/scheme.png", "/scheme/interpreter.png", "/scheme/map.png"], date: "2021-08-01"} 
+    ].sort((a, b) => {
+        const dateA = new Date(a.date);
+        const dateB = new Date(b.date);
+        return dateB - dateA; // Sort in descending order
+      });;
 
     const [selectedSkill, setSelectedSkill] = useState(""); // Step 1
     const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Define isDropdownOpen
