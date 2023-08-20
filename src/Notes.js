@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Email } from '@mui/icons-material';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
+import Button from '@mui/material/Button';
+import { ArrowBack, ArrowForward } from '@mui/icons-material';
+
 import "./App.css"
 
 function CS10Info() {
@@ -42,9 +45,9 @@ function CS10Info() {
 
     {date: "August 19, 2023", content: [{heading: "Welcome to CS10!", subheading: [
         "Sign up for a section",
-        "<p><strong>Note:</strong> Make sure to complete the <a href='/registration'>registration form</a>.</p>"
+        "<strong>Note:</strong> Make sure to complete the <a href='/registration'>registration form</a>."
       ]}, {heading: "Hello world"}]},
-    {date: "August 26, 2023", content: [{heading: "Welcome to Week 2!", subheading: ["Sign up for a section"]}, {heading: "Hello world"}]},
+    {date: "August 26, 2023", content: [{heading: "Welcome to Week 2!", subheading: ["Sign up for a section on Edstem!"]}, {heading: "Hello world"}]},
     // Add more weeks as needed
   ];
   
@@ -54,26 +57,37 @@ function CS10Info() {
     const handlePrevWeek = () => {
       setCurrentWeek((currentWeek - 1 + weeksData.length) % weeksData.length);
     };
-    
+  
     const handleNextWeek = () => {
       setCurrentWeek((currentWeek + 1 + weeksData.length) % weeksData.length);
     };
   
     return (
-
-    <div className="container">
+        <div className="container">
           <div className="text-center">
-            <button onClick={handlePrevWeek}>&lt; Previous Week</button>
-            <button onClick={handleNextWeek}>Next Week &gt;</button>
-  
-            <WeekHeader currentWeek={currentWeek} />
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <Button variant="contained" onClick={handlePrevWeek}>
+                  <ArrowBack />
+                  Previous Week
+                </Button>
+                
+              </div>
+              <div >
+                  <WeekHeader currentWeek={currentWeek} />
+                </div>
+              <Button variant="contained" onClick={handleNextWeek}>
+                Next Week
+                <ArrowForward />
+              </Button>
+            </div>
             {currentWeek >= 0 && currentWeek < weeksData.length && (
               <AnnouncementList announcements={weeksData[currentWeek].content} />
             )}
           </div>
         </div>
-    );
-  };
+      );
+            }
   
 
 
