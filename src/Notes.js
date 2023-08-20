@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { Email } from '@mui/icons-material';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
+import "./App.css"
 
 function CS10Info() {
     return (
       <header className="masthead">
-        <div className="d-flex container justify-content-center align-items-center round" style={{ background: 'linear-gradient(to bottom, grey, #000080)', borderRadius: '20px', width: '100%', marginTop: '50px', marginBottom: '50px', padding: '30px', border: '2px solid yellow' }}>
+        <div className="d-flex container justify-content-center align-items-center round" style={{ background: 'linear-gradient(to bottom, grey, #000080)', borderRadius: '20px', width: '100%', padding: '30px', border: '2px solid yellow' }}>
           <div className="container-fluid p-5" style={{ color: 'white', textAlign: 'center' }}>
             <h2 className="d-flex align-items-center justify-content-center" style={{ color: '#FFD700', marginBottom: '20px' }}>CS10 Fall 2023 Notes and Resources</h2>
             <p className="" style={{ color: '#FFD700', fontSize: '24px' }}><strong>Lab</strong>: Mondays and Wednesdays 8pm - 10pm <br />(Soda Hall Room 430-438, Wozniak Lounge)</p>
@@ -31,21 +32,18 @@ function CS10Info() {
         <h2 className="section-heading text-uppercase spaced">
           Week {currentWeek + 1} Announcements
         </h2>
-        <p>{week.date}</p>
+        <h4>{week.date}</h4>
+        <img src={"alonzo.svg"} alt="Alonzo Mascot" />
       </div>
     );
   };
   
   const weeksData = [
-    /* An array of announcements for each week */
-    /* Example:
-    [
-      "Announcement 1 for week 1",
-      "Announcement 2 for week 1",
-      ...
-    ]
-    */
-    {date: "August 19, 2023", content: [{heading: "Welcome to CS10!", subheading: ["Sign up for a section"]}, {heading: "Hello world"}]},
+
+    {date: "August 19, 2023", content: [{heading: "Welcome to CS10!", subheading: [
+        "Sign up for a section",
+        "<p><strong>Note:</strong> Make sure to complete the <a href='/registration'>registration form</a>.</p>"
+      ]}, {heading: "Hello world"}]},
     {date: "August 26, 2023", content: [{heading: "Welcome to Week 2!", subheading: ["Sign up for a section"]}, {heading: "Hello world"}]},
     // Add more weeks as needed
   ];
@@ -62,41 +60,38 @@ function CS10Info() {
     };
   
     return (
-      <section className="page-section" id="announcements">
-        <div className="container">
+
+    <div className="container">
           <div className="text-center">
-            {/* Buttons to navigate between weeks */}
             <button onClick={handlePrevWeek}>&lt; Previous Week</button>
             <button onClick={handleNextWeek}>Next Week &gt;</button>
   
-            {/* Display the week header and announcement list */}
             <WeekHeader currentWeek={currentWeek} />
             {currentWeek >= 0 && currentWeek < weeksData.length && (
               <AnnouncementList announcements={weeksData[currentWeek].content} />
             )}
           </div>
         </div>
-      </section>
     );
   };
   
 
 
-const AnnouncementList = ({ announcements }) => {
-    console.log(announcements);
+  const AnnouncementList = ({ announcements }) => {
     return (
         <div className="announcement">
-        {announcements.map((announcement, index) => (
-            <div key={index}>
-            <h4 className="text-muted">{announcement.heading}</h4>
-            <ul>
-                
-                {announcement.subheading && announcement.subheading.map((sub, subIndex) => (
-                <li key={subIndex}>{sub}</li>
-                ))}
-            </ul>
-            </div>
-        ))}
+            {announcements.map((announcement, index) => (
+                <div key={index} className="announcement-item">
+                    <h3 className=" announcement-heading">{announcement.heading}</h3>
+                    <ul className="announcement-sublist">
+                        {announcement.subheading && announcement.subheading.map((sub, subIndex) => (
+                            <li key={subIndex}
+                                dangerouslySetInnerHTML={{ __html: sub }}
+                            ></li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
         </div>
     );
 };
@@ -113,7 +108,7 @@ export default function Notes() {
     // Particles are loaded, you can customize the container if needed
   };
   
-  const shapeTypes = ["circle", "triangle", "polygon", "star"]; // Array of shape types
+  const shapeTypes = ["circle", "triangle", "polygon", "star"]; 
 
 
   const options = {
@@ -271,13 +266,17 @@ export default function Notes() {
   return (
     <div>
 
-    <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+<div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
       <CS10Info />
+      <div>
       {particlesBackground}
-      
+      </div>
+
+    
     </div>
-    <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <AnnouncementsContainer />
+    <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', background: 'linear-gradient(to bottom, #F0F8FF, #CAE9F5 )' }}>
+    <AnnouncementsContainer />
+
     </div>
     </div>
   );

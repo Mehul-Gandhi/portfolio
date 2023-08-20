@@ -127,3 +127,35 @@
   background-color: grey; /* Change this to your desired color */
   color: white; /* Change the text color accordingly */
 }
+
+/* App.css */
+
+/* ... your existing CSS rules ... */
+
+.announcement-item {
+  margin: 20px 0;
+  padding-left: -40px;
+
+}
+
+.announcement-sublist::before {
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+
+}
+
+
+
+.announcement-sublist li {
+  margin-bottom: 5px;
+  list-style: none; /* Remove default bullet point */
+  position: relative; /* Create a position context for the custom bullet point */
+}
+
+.announcement-sublist li::before {
+  content: "\2022"; /* Custom bullet point character */
+  position:static;
+  left: 20px; /* Adjust this value to control the spacing */
+  margin-right: 15px;
+}
