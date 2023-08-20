@@ -208,7 +208,7 @@ images: ["/cpu/proj3_pipeline.png", "/cpu/error_wire_2.png"]}
               </div>
             )}
           </div>
-        <div className="projects-container">
+        <div className="projects-container" style={{ display: 'flex', justifyContent: 'space-evenly' }}>
           {filteredProjects.map((item) => {
             return (
               <ProjectEntry

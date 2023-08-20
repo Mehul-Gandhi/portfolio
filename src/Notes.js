@@ -110,7 +110,49 @@ function CS10Info() {
     );
 };
   
-  
+const labInfo = [
+    //[Lab Name, Lab Link, Lab Slides Link, ["Resource 1", ..., "Resource N"]]
+    ["Lab 1: Welcome to Snap", "https://cs10.org/bjc-r/topic/topic.html?topic=berkeley_bjc/intro_pair/1-introduction.topic&course=&novideo&noreading&noassignment",
+     "https://docs.google.com/presentation/d/11gyuil24Yc4BpEUGlnd7iU4A6HFMQixRvbH4_s8PsRQ/edit",
+    [{name: "Snap! Reference Manual", content: "https://snap.berkeley.edu/snap/help/SnapManual.pdf"}, {name: "Snap! Explained by Scratch", content: "https://en.scratch-wiki.info/wiki/Snap!_(programming_language)"}, {name: "Snap! Backstory", content: "https://www.miosoft.com/blog/snap-programming-for-everyone.html"}]],
+    ["Lab 2: Build Your Own Blocks", "https://cs10.org/bjc-r/topic/topic.html?topic=berkeley_bjc/intro_pair/2-loops-variables.topic&course=&novideo&noreading&noassignment", 
+"https://docs.google.com/presentation/u/1/d/1gITpV1ih_BEIyykone5wrDAu_BnzMbiBhQqKe604o30/edit?usp=drive_web&ouid=101261523977890586883",
+[{name: "Snap Tips and Tricks!", content: "https://docs.google.com/document/d/1PcnJHRVdttYCBnfEgfEOadMEI6SBcM18U44xNpr0wK0/edit"}]]
+
+];
+
+const LabTable = ({ labInfo }) => {
+    return (
+      <div className="container">
+        <h2 className="section-heading text-uppercase spaced">Lab Information</h2>
+        <table className="table">
+          <thead>
+            <tr>
+              <th>Lab</th>
+              <th>Lab Slides</th>
+              <th>Resources</th>
+            </tr>
+          </thead>
+          <tbody>
+            {labInfo.map((lab, index) => (
+              <tr key={index}>
+                <td><a href={lab[1]}>{lab[0]}</a></td>
+                <td><a href={lab[2]} target="_blank" rel="noopener noreferrer">Lab {index + 1} Slides</a></td>
+                <td>
+                {lab[3].map((resource, resourceIndex) => (
+                    <div>
+                  <a key={resourceIndex} href={resource.content} target="_blank" rel="noopener noreferrer">{resource.name}</a>
+                  <br />
+                  </div>
+                ))}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  };
   
 export default function Notes() {
   
@@ -291,6 +333,10 @@ export default function Notes() {
     <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', background: 'linear-gradient(to bottom, #F0F8FF, #CAE9F5 )' }}>
     <AnnouncementsContainer />
 
+    </div>
+    <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', background: 'linear-gradient(to bottom, #F0F8FF, #CAE9F5 )' }}>
+
+    <LabTable labInfo={labInfo} />
     </div>
     </div>
   );
