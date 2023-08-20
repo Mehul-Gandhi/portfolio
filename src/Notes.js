@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Email } from '@mui/icons-material';
+import { CenterFocusStrong, Email } from '@mui/icons-material';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import Button from '@mui/material/Button';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
-
-import "./App.css"
+import LinkIcon from '@mui/icons-material/Link';
+import FeedIcon from '@mui/icons-material/Feed';
+import "./App.css";
 
 function CS10Info() {
     return (
@@ -20,6 +21,16 @@ function CS10Info() {
                 gandhi@berkeley.edu
               </a>
             </div>
+            <div className="d-flex align-items-center mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
+                <a href="https://cs10.org/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
+                <LinkIcon sx={{ fontSize: 36, marginRight: 4 }} className="email-icon" />
+                    CS10 Website</a>
+            </div>
+            <div className="d-flex align-items-center mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
+                <a href="https://forms.gle/pUYpbNhdcAF7aGZw9" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
+                <FeedIcon sx={{ fontSize: 36, marginRight: 4 }} className="email-icon" />
+                    Anonymous Feedback Form</a>
+            </div>
           </div>
         </div>
       </header>
@@ -31,8 +42,8 @@ function CS10Info() {
   
     const week = weeksData[currentWeek];
     return (
-      <div>
-        <h2 className="section-heading text-uppercase spaced">
+      <div style={{color: "blue"}}>
+        <h2 className="section-heading text-uppercase spaced" >
           Week {currentWeek + 1} Announcements
         </h2>
         <h4>{week.date}</h4>
@@ -123,9 +134,11 @@ const labInfo = [
 
 const LabTable = ({ labInfo }) => {
     return (
-      <div className="container">
-        <h2 className="section-heading text-uppercase spaced">Lab Information</h2>
-        <table className="table">
+      <div className="container" >
+        <h2 className="section-heading text-uppercase spaced" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'blue'}}>Lab Information</h2>
+        <h4  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'blue'}}>Slides created by Mehul Gandhi</h4>
+        <div style={{ borderRadius: '10px', overflow: 'hidden' }}>
+        <table className="table" >
           <thead>
             <tr>
               <th>Lab</th>
@@ -150,9 +163,134 @@ const LabTable = ({ labInfo }) => {
             ))}
           </tbody>
         </table>
+        </div>
       </div>
     );
   };
+
+  const ResourceBox = ({ title, items }) => {
+    const boxStyle = {
+      background: 'linear-gradient(to bottom, #0D47A1, #1976D2)',
+      borderRadius: '50px',
+      width: '100%',
+      padding: '30px',
+      marginBottom: '20px',
+      margin: '0 10px',
+      color: '#FFFFFF',
+    };
+  
+    const listStyle = {
+      listStyleType: 'none',
+      padding: '0',
+      margin: '0',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+    };
+  
+    return (
+      <div style={boxStyle}>
+        <h2 className="d-flex justify-content-center align-items-center">{title}</h2>
+        <ul style={listStyle} className="d-flex align-items-center mb-3 email-link">
+          {items.map((item, index) => (
+            <li key={index} >
+              <a href={item.content} target="_blank" rel="noopener noreferrer" className="email-link"
+              style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} 
+              >
+              {item.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
+  
+  const Resources = () => {
+    const items = [
+      {
+        title: 'Debugging Guide',
+        items: [
+            {name: "Debugging Snap!", content: "https://docs.google.com/document/d/16gaxemuImuABVoe8C_lrmEd3EKz53QtWHe2OwkHMcBE/edit?usp=sharing"},
+            {name: "Yolanda's Snap! Debugging Walkthrough (June 2020)", content: "https://www.youtube.com/watch?v=nAgsZ_fVcw0&t=6s"},
+          { name: 'PythonTutor', content: 'http://cs10.org/fa23' },
+        ],
+      },
+      {
+        title: 'Exam Prep',
+        items: [
+          { name: "Mehul's Fractal Review Video (Spring 2023)", content: 'https://youtu.be/ioOvJ9S268s' },
+          { name: "Mehul's Fractal Review Slides (Spring 2023)", content: "https://docs.google.com/presentation/d/10TgeE-YHSQOW5JmK9qf9BBfD83pj9zDcuZ8SnGyR7P4/edit?usp=sharing"},
+          { name: "Mehul's Summer 2022 Final Exam Walkthrough", content: 'https://youtu.be/rS2Av0stp5w?list=PLVjI1AKNyfVOnDpcdm4Mf53ARt2u85YuW' },
+          // Add more items as needed
+        ],
+      },
+      {
+        title: 'Miscellaneous',
+        items: [
+          { name: 'Useful Snap! Blocks', content: 'https://docs.google.com/document/d/16j-3p_mMLS6DB3lUr2_wSYOhUOP-WencXrFnzZRpHyo/edit' },
+          // Add more items as needed
+        ],
+      },
+    ];
+  
+    return (
+      <div className="d-flex container justify-content-center align-items-start" style={{ margin: '10px' }}>
+        {items.map((item, index) => (
+          <ResourceBox key={index} title={item.title} items={item.items} />
+        ))}
+      </div>
+    );
+  };
+  
+  const resourcesParticlesOptions = {
+    autoPlay: true,
+    fullScreen: {
+      enable: false,
+      zIndex: 0,
+    },
+    fpsLimit: 60,
+    interactivity: {
+      events: {
+        onClick: {
+          enable: true,
+          mode: 'push',
+        },
+      },
+      modes: {
+        push: {
+          quantity: 4,
+        },
+      },
+      detectsOn: 'window',
+    },
+    particles: {
+      color: {
+        value: ['#FF5733', '#FFC300', '#DAF7A6', '#C70039', '#900C3F'],
+      },
+      shape: {
+        type: 'circle',
+      },
+      size: {
+        animation: {
+          enable: false,
+          minimumValue: 0.1,
+          speed: 40,
+          sync: false,
+        },
+        random: true,
+        value: 5,
+      },
+      move: {
+        enable: true,
+        speed: 2,
+        outMode: 'out',
+      },
+    },
+  };
+
+
   
 export default function Notes() {
   
@@ -160,9 +298,15 @@ export default function Notes() {
     // Initialize the tsParticles instance (engine) here, adding custom shapes or presets
     await loadFull(engine);
   };
+
+  const particlesInit2 = async (engine) => {
+    // Initialize the tsParticles instance (engine) here, adding custom shapes or presets
+    await loadFull(engine);
+  };
   const particlesLoaded = async (container) => {
     // Particles are loaded, you can customize the container if needed
   };
+  
   
   const shapeTypes = ["circle", "triangle", "polygon", "star"]; 
 
@@ -318,6 +462,10 @@ export default function Notes() {
   const particlesBackground = (
     <Particles options={options} init={particlesInit} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }} />
   );
+    // @ts-ignore
+  const resourcesParticlesBackground = (
+    <Particles options={options} init={particlesInit} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }} />
+    );
 
   return (
     <div>
@@ -334,10 +482,18 @@ export default function Notes() {
     <AnnouncementsContainer />
 
     </div>
-    <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', background: 'linear-gradient(to bottom, #F0F8FF, #CAE9F5 )' }}>
+    <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'start', alignItems: 'center', background: 'linear-gradient(to bottom, #BCD2E8, #91BAD6 )' }}>
 
     <LabTable labInfo={labInfo} />
     </div>
+    <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'start', alignItems: 'center', background: 'linear-gradient(to bottom, #BCD2E8, #91BAD6 )' }}>
+
+    <Resources />
+    <div>
+    {particlesBackground} 
+
+        </div>
+</div>
     </div>
   );
 }
