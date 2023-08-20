@@ -98,7 +98,7 @@ skills: ["Java"], links: [{name: "Request Access", content: mail}, {name: "Proje
 {name: "Scheme Interpreter", class: cs61a, description: "Developed an interpreter, written in Python, for a subset of the Scheme language, including the recursive evaluator.", details: ["Developed an interpreter, written in Python, for a subset of the Scheme language, including the recursive evaluator."],
 skills: ["Python", "Scheme"], links: [{name: "Request Access", content: mail}, {name: "Project Spec", content: "https://cs61a.org/proj/scheme/"}],
 images: ["/scheme/scheme.png", "/scheme/interpreter.png", "/scheme/map.png"], date: "2021-08-01"},
- {name: "Pokemon Discord Bot", class: "Side Project", description: "A Pokemon discord bot implemented in python. Contains pokemon minigames, a simple TCG, and anime commands. Uses PostgreSQL.", details: ["A Pokemon discord bot implemented in python. Contains pokemon minigames, a simple TCG, and anime commands. Uses PostgreSQL."],
+ {name: "Pokemon Discord Bot", class: "Side Project", description: "A Pokemon discord bot implemented in python. Contains pokemon minigames, a simple TCG, and anime commands. Uses asynchronous programming, the YouTube API, PyPokedex API, and PostgreSQL for database storage.", details: ["A Pokemon discord bot implemented in python. Contains pokemon minigames, a simple TCG, and anime commands. Uses PostgreSQL."],
 skills: ["Python", "SQL"], links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/pokemon-discord-bot"}, {name: "Video", content: "https://youtu.be/FvExsGKHX1M"}], 
 images: ["/discord/bag.png", "/discord/poker.png", "/discord/ttt.png"], date: "2022-03-28"},
 {name: "Shepherd", class: "Pioneers in Engineering", description: "Shepherd is the team that is in charge of field control. Shepherd brings together all the data on the game field into one centralized location, where it keeps track of score, processes game-specific actions, keeps track of time, and informs the scoreboard. I created the alliance selection menu.",
@@ -111,7 +111,14 @@ details: [], skills: ["Java"], links: [{name: "Request Access", content: mail}, 
 images: ["/jump/alphabeta.png", "/jump/cascadeOverfull2.png"], date: "2021-11-04"}, 
 {name: "Yelp Clone App", class: "Side Project", description: "Developed a Yelp-like website application using the MERN tech stack to enable users to explore and rate 1000+ restaurants in Malaysia, fostering an interactive environment", 
 details: [], skills: ["React", "NextJS", "Express", "MongoDB", "JavaScript", "HTML", "CSS"],
-links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/sss"}], date: "2023-08-18", images: ["/yelp/map.png", "/yelp/list.png"]}
+links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/sss"}], date: "2023-08-18", images: ["/yelp/map.png", "/yelp/list.png"]},
+{name: "NumC", class:"CS61C: Great Ideas in Computer Architecture (Machine Structures)", description: "NumC is a Python library aimed at optimizing mathematical and matrix operations through a blend of SIMD instructions and parallel processing techniques like OpenMP.\
+ NumC achieves a 55.5x speedup in matrix multiplication and a 1100x speedup in the matrix power operation.",
+details: [], skills: ["C"], links: [{name: "Request Access", content: mail}, {name: "Project Spec", content: "https://inst.eecs.berkeley.edu/~cs61c/su22/projects/proj4/"}], date: "2022-08-01", images: ["numc/row_major.jpg", "/numc/download.png", "/numc/omp.jpg"]},
+{name: "CS61CPU", class: "CS61C: Great Ideas in Computer Architecture (Machine Structures)", description: "The CS61CPU project is an intricate endeavor focused on enhancing a RISC-V CPU design with a 2-stage pipelining approach. The project delves into various\
+ facets of CPU architecture, including instruction set expansion through the integration of new instructions. Through rigorous testing and simulation, the CS61CPU project aims to create a refined and functional CPU capable of effectively executing a diverse set of\
+  instructions with notable performance gains attributed to pipelining.", details: [], skills: ["Logism", "RISC-V"], links: [{name: "Request Access", content: mail}, {name: "Project Spec", content: "https://inst.eecs.berkeley.edu/~cs61c/su21/projects/proj3/"}], date: "2022-07-25",
+images: ["/cpu/proj3_pipeline.png", "/cpu/error_wire_2.png"]}
     ].sort((a, b) => {
         const dateA = new Date(a.date);
         const dateB = new Date(b.date);
