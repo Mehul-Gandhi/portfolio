@@ -7,38 +7,63 @@ import { ArrowBack, ArrowForward } from '@mui/icons-material';
 import LinkIcon from '@mui/icons-material/Link';
 import FeedIcon from '@mui/icons-material/Feed';
 import QueueIcon from '@mui/icons-material/Queue';
+import LiveHelpIcon from '@mui/icons-material/LiveHelp';
+import FolderSharedIcon from '@mui/icons-material/FolderShared';
 import "./App.css";
 
 function CS10Info() {
     return (
       <header className="masthead">
-        <div className="d-flex container justify-content-center align-items-center round" style={{ background: 'linear-gradient(to bottom, grey, #000080)', borderRadius: '20px', width: '100%', padding: '30px', border: '2px solid yellow' }}>
-          <div className="container-fluid p-5" style={{ color: 'white', textAlign: 'center' }}>
-            <h2 className="d-flex align-items-center justify-content-center" style={{ color: '#FFD700', marginBottom: '20px' }}>CS10 Fall 2023 Notes and Resources</h2>
-            <p className="" style={{ color: '#FFD700', fontSize: '24px' }}><strong>Lab</strong>: Mondays and Wednesdays 8pm - 10pm <br />(Soda Hall Room 430-438, Wozniak Lounge)</p>
-            <div className="d-flex align-items-center mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
-              <a href="mailto:gandhi@berkeley.edu" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
-                <Email sx={{ fontSize: 36, marginRight: 4 }} className="email-icon" />
-                gandhi@berkeley.edu
-              </a>
-            </div>
-            <div className="d-flex align-items-center mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
-                <a href="https://forms.gle/pUYpbNhdcAF7aGZw9" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
-                <FeedIcon sx={{ fontSize: 36, marginRight: 4 }} className="email-icon" />
-                    Anonymous Feedback Form</a>
-            </div>
-            <div className="d-flex align-items-center mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
-                <a href="https://cs10.org/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
-                <LinkIcon sx={{ fontSize: 36, marginRight: 4 }} className="email-icon" />
-                    CS10 Website</a>
-            </div>
-            <div className="d-flex align-items-center mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
-                <a href="https://oh.cs10.org/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
-                <QueueIcon sx={{ fontSize: 36, marginRight: 4 }} className="email-icon" />
-                    Office Hour Queue</a>
-            </div>
-          </div>
-        </div>
+       <div className="d-flex container justify-content-center align-items-center round" style={{ background: 'linear-gradient(to bottom, grey, #000080)', borderRadius: '20px', width: '100%', padding: '30px', border: '2px solid yellow' }}>
+  <div className="container-fluid p-5" style={{ color: 'white', textAlign: 'center' }}>
+    <h2 className="d-flex align-items-center justify-content-center" style={{ color: '#FFD700', marginBottom: '20px' }}>CS10 Fall 2023 Notes and Resources</h2>
+    <p className="" style={{ color: '#FFD700', fontSize: '24px' }}><strong>Lab</strong>: Mondays and Wednesdays 8pm - 10pm <br />(Soda Hall Room 430-438, Wozniak Lounge)</p>
+    
+    <div className="row">
+      <div className="col-md-3 mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
+        <a href="mailto:gandhi@berkeley.edu" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', fontSize: '18px' }} className="email-link">
+          <Email sx={{ fontSize: 36, marginBottom: 4 }} className="email-icon" />
+          gandhi@berkeley.edu
+        </a>
+      </div>
+      <div className="col-md-3 mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
+        <a href="https://forms.gle/pUYpbNhdcAF7aGZw9" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', fontSize: '18px' }} className="email-link">
+          <FeedIcon sx={{ fontSize: 36, marginBottom: 4 }} className="email-icon" />
+          Anonymous Feedback Form
+        </a>
+      </div>
+      <div className="col-md-3 mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
+        <a href="https://cs10.org/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', fontSize: '18px' }} className="email-link">
+          <LinkIcon sx={{ fontSize: 36, marginBottom: 4 }} className="email-icon" />
+          CS10 Website
+        </a>
+      </div>
+      <div className="col-md-3 mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
+        <a href="https://docs.google.com/document/d/1YqugyHgcEWXuCc0BtbX6dzx3ZXixK86SkgJq2dxx9oY/edit" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', fontSize: '18px' }} className="email-link">
+          <LiveHelpIcon sx={{ fontSize: 36, marginBottom: 4 }} className="email-icon" />
+          Lab FAQ
+        </a>
+      </div>
+      
+    </div>
+    
+    <div className="row">
+      <div className="col-md-3 mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
+        <a href="https://oh.cs10.org/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', fontSize: '18px' }} className="email-link">
+          <QueueIcon sx={{ fontSize: 36, marginBottom: 4 }} className="email-icon" />
+          Office Hour Queue
+        </a>
+      </div>
+      <div className="col-md-3 mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
+        <a href="https://docs.google.com/document/d/1YqugyHgcEWXuCc0BtbX6dzx3ZXixK86SkgJq2dxx9oY/edit" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', fontSize: '18px' }} className="email-link">
+          <FolderSharedIcon sx={{ fontSize: 36, marginBottom: 4 }} className="email-icon" />
+          Mehul's Slides
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
       </header>
     );
   }
@@ -237,6 +262,7 @@ const LabTable = ({ labInfo }) => {
       {
         title: 'Miscellaneous',
         items: [
+          { name: "Mehul's Slides", content: "https://drive.google.com/drive/folders/1ZHJiGxUUWJ3IuBAamokUPElINW2qsc7w?usp=sharing"},
           { name: "Snap! Forum", content: "https://forum.snap.berkeley.edu/"},
           { name: 'Useful Snap! Blocks', content: 'https://docs.google.com/document/d/16j-3p_mMLS6DB3lUr2_wSYOhUOP-WencXrFnzZRpHyo/edit' },
           // Add more items as needed
