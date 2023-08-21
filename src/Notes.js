@@ -60,11 +60,11 @@ function CS10Info() {
   
   const weeksData = [
 
-    {date: "August 19, 2023", content: [{heading: "Welcome to CS10!", subheading: [
+    {date: "August 21, 2023", content: [{heading: "Welcome to CS10!", subheading: [
         "Sign up for a section",
-        "<strong>Note:</strong> Make sure to complete the <a href='/registration'>registration form</a>."
-      ]}, {heading: "Hello world"}]},
-    {date: "August 26, 2023", content: [{heading: "Welcome to Week 2!", subheading: ["Sign up for a section on Edstem!"]}, {heading: "Hello world"}]},
+        "<strong>Note:</strong> Make sure to complete the <a href='https://forms.gle/aEQtobR9xhgjzHFL6'>registration form</a>."
+      ]}, {heading: "Lab at Soda Hall Wozniak Lounge Room 430-438", subheading: ["Victoria's Lab is on Mondays and Wednesdays 3-5pm", "Mehul's Lab is on Mondays and Wednesdays 8-10pm"]}]},
+    // {date: "August 26, 2023", content: [{heading: "Welcome to Week 2!", subheading: ["Sign up for a section on Edstem!"]}, {heading: "Hello world"}]},
     // Add more weeks as needed
   ];
   
