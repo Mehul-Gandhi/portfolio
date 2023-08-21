@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
 import LinkIcon from '@mui/icons-material/Link';
 import FeedIcon from '@mui/icons-material/Feed';
+import QueueIcon from '@mui/icons-material/Queue';
 import "./App.css";
 
 function CS10Info() {
@@ -22,14 +23,19 @@ function CS10Info() {
               </a>
             </div>
             <div className="d-flex align-items-center mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
+                <a href="https://forms.gle/pUYpbNhdcAF7aGZw9" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
+                <FeedIcon sx={{ fontSize: 36, marginRight: 4 }} className="email-icon" />
+                    Anonymous Feedback Form</a>
+            </div>
+            <div className="d-flex align-items-center mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
                 <a href="https://cs10.org/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
                 <LinkIcon sx={{ fontSize: 36, marginRight: 4 }} className="email-icon" />
                     CS10 Website</a>
             </div>
             <div className="d-flex align-items-center mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
-                <a href="https://forms.gle/pUYpbNhdcAF7aGZw9" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
-                <FeedIcon sx={{ fontSize: 36, marginRight: 4 }} className="email-icon" />
-                    Anonymous Feedback Form</a>
+                <a href="https://oh.cs10.org/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', fontSize: '18px' }} className="email-link">
+                <QueueIcon sx={{ fontSize: 36, marginRight: 4 }} className="email-icon" />
+                    Office Hour Queue</a>
             </div>
           </div>
         </div>
@@ -214,12 +220,14 @@ const LabTable = ({ labInfo }) => {
         items: [
             {name: "Debugging Snap!", content: "https://docs.google.com/document/d/16gaxemuImuABVoe8C_lrmEd3EKz53QtWHe2OwkHMcBE/edit?usp=sharing"},
             {name: "Yolanda's Snap! Debugging Walkthrough (June 2020)", content: "https://www.youtube.com/watch?v=nAgsZ_fVcw0&t=6s"},
-          { name: 'PythonTutor', content: 'http://cs10.org/fa23' },
+            {name: "Mehul's Python Debugging Guide", content: "https://docs.google.com/document/d/1LouAC_i04MAUUjAchyNpR5ZmJWXgB0KcJ8zATZ9oq1M/edit?usp=sharing"},
+          { name: 'PythonTutor', content: 'https://pythontutor.com/python-debugger.html#mode=edit' },
         ],
       },
       {
         title: 'Exam Prep',
         items: [
+          { name: "Spring 2020 Quest Exam Walkthrough", content: "https://youtu.be/v38P5quvoMc"},
           { name: "Mehul's Fractal Review Video (Spring 2023)", content: 'https://youtu.be/ioOvJ9S268s' },
           { name: "Mehul's Fractal Review Slides (Spring 2023)", content: "https://docs.google.com/presentation/d/10TgeE-YHSQOW5JmK9qf9BBfD83pj9zDcuZ8SnGyR7P4/edit?usp=sharing"},
           { name: "Mehul's Summer 2022 Final Exam Walkthrough", content: 'https://youtu.be/rS2Av0stp5w?list=PLVjI1AKNyfVOnDpcdm4Mf53ARt2u85YuW' },
@@ -229,6 +237,7 @@ const LabTable = ({ labInfo }) => {
       {
         title: 'Miscellaneous',
         items: [
+          { name: "Snap! Forum", content: "https://forum.snap.berkeley.edu/"},
           { name: 'Useful Snap! Blocks', content: 'https://docs.google.com/document/d/16j-3p_mMLS6DB3lUr2_wSYOhUOP-WencXrFnzZRpHyo/edit' },
           // Add more items as needed
         ],

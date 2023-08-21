@@ -61,7 +61,7 @@ export default function Projects() {
     const mail = "mailto:gandhi@berkeley.edu"
     const projects = [
         {name: "InterView InSight", class: "UC Berkeley CalHacks + SkyDeck AI/LLM Hackathon ", description: "A live interview feedback dashboard to enhance students' interview skills powered by ChatGPT", 
-        details: ["Collaborated with a team of 3 to create a live interview feedback dashboard, enhancing users' presentation and public speaking skills to enhance users' interview performance and boost confidence",
+        details: ["Collaborated with a team of 3 to create a live interview feedback dashboard, enhancing users' presentation and public speaking skills to enhance users' interview performance and boost confidence.",
             "Leveraged the HumeAI API to analyze body language and vocal prosody and the OpenAI API to provide valuable feedback and responses to boost the users' communication skills"]
         , skills: ["React", "Next", "JavaScript", "ChatGPT API"],
     links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/interview-insight"}, {name: "Post", content: "https://www.linkedin.com/feed/update/urn:li:activity:7076790960923299840/"}], images: ["/interview/task.png", "/interview/teaching.jpg", "/interview/practice.jpg", "/interview/pitching.jpg"], date: "June 2023"},
@@ -75,7 +75,7 @@ export default function Projects() {
      links: [{name: "Request Access", content: mail}, {name: "Project spec", content: "https://fa22.cs161.org/proj2/"}],
      date: "2022-12-01"},
      {name: "Balance", class: "UC Berkeley CalHacks 9.0", description: "Created a web application in a team of 4, where users upload grocery shopping receipts to earn cryptocurrency coins based\
-      on how well their hauls meet nutritional recommendations", details: ["Created a web application in a team of 4, where users upload grocery shopping receipts to earn cryptocurrency coins based on how well their hauls meet nutritional recommendations.",
+      on how well their hauls meet nutritional recommendations.", details: ["Created a web application in a team of 4, where users upload grocery shopping receipts to earn cryptocurrency coins based on how well their hauls meet nutritional recommendations.",
       "Utilized Tesseract, an Optical Character Recognition API, to convert a grocery receipt into machine-readable text",
       "Designed an algorithm to award users cryptocurrency coins using a food training dataset to classify foods into one of the six food categories and utilized Web3.js and the Solana API to create, sign, and send transactions to the network"]
     , skills: ["HTML", "CSS", "JavaScript", "React", "Jupyter", "Bootstrap"], links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/Balance"}],
@@ -104,12 +104,12 @@ images: ["/discord/bag.png", "/discord/poker.png", "/discord/ttt.png"], date: "2
 {name: "Shepherd", class: "Pioneers in Engineering", description: "Shepherd is the team that is in charge of field control. Shepherd brings together all the data on the game field into one centralized location, where it keeps track of score, processes game-specific actions, keeps track of time, and informs the scoreboard. I created the alliance selection menu.",
 details: [], skills: ["Python", "HTML", "CSS", "JavaScript", "Flask"], links: [{name: "GitHub", content: "https://github.com/pioneers/shepherd"}, {name: "Video", content: "https://youtu.be/htvO3EBsScM"}],
 images: ["/shepherd/creator.png","/shepherd/scoreboard.png", "/shepherd/gui.png", "/shepherd/selection.png"], date: "2023-05-01"},
-{name: "2048", class: "Side Project", description: "2048 is a single-player sliding block puzzle game designed by Italian web developer Gabriele Cirulli. The game's objective is to slide numbered tiles on a grid to combine them to create a tile with the number 2048. However, one can continue to play the game after reaching the goal, creating tiles with larger numbers. I implemented this in Python using Pygame", 
+{name: "2048", class: "Side Project", description: "2048 is a single-player sliding block puzzle game designed by Italian web developer Gabriele Cirulli. The game's objective is to slide numbered tiles on a grid to combine them to create a tile with the number 2048. However, one can continue to play the game after reaching the goal, creating tiles with larger numbers. I implemented this in Python using Pygame.", 
 details: [], skills: ["Python"], links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/2048"}], images: ["2048/screenshot.png"], date: "2021-12-05"},
 {name: "Jumping Cube Game", class: cs61b, description: "The KJumpingCube game1 is a two-person board game. It is a pure strategy game, involving no element of chance. I created an AI using the minimax algorithm and alpha-beta pruning for a human player to play against the computer. I also created a GUI for the game.",
 details: [], skills: ["Java"], links: [{name: "Request Access", content: mail}, {name: "Project Spec", content: "https://inst.eecs.berkeley.edu/~cs61b/fa21/materials/proj/proj2/index.html"}, {name: "Play", content: "http://www.playonlinedicegames.com/jumpingcube"}],
 images: ["/jump/alphabeta.png", "/jump/cascadeOverfull2.png"], date: "2021-11-04"}, 
-{name: "Yelp Clone App", class: "Side Project", description: "Developed a Yelp-like website application using the MERN tech stack to enable users to explore and rate 1000+ restaurants in Malaysia, fostering an interactive environment", 
+{name: "Yelp Clone App", class: "Side Project", description: "Developed a Yelp-like website application using the MERN tech stack to enable users to explore and rate 1000+ restaurants in Malaysia, fostering an interactive environment.", 
 details: [], skills: ["React", "NextJS", "Express", "MongoDB", "JavaScript", "HTML", "CSS"],
 links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/sss"}], date: "2023-08-18", images: ["/yelp/map.png", "/yelp/list.png"]},
 {name: "NumC", class:"CS61C: Great Ideas in Computer Architecture (Machine Structures)", description: "NumC is a Python library aimed at optimizing mathematical and matrix operations through a blend of SIMD instructions and parallel processing techniques like OpenMP.\
