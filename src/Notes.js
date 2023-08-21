@@ -244,8 +244,18 @@ const LabTable = ({ labInfo }) => {
       },
     ];
   
+    const particlesInit = async (engine) => {
+      // Initialize the tsParticles instance (engine) here, adding custom shapes or presets
+      await loadFull(engine);
+    };
+  
+    const particlesLoaded = async (container) => {
+      // Particles are loaded, you can customize the container if needed
+    };
+
     return (
       <div className="d-flex container justify-content-center align-items-start" style={{ margin: '10px' }}>
+
         {items.map((item, index) => (
           <ResourceBox key={index} title={item.title} items={item.items} />
         ))}
@@ -253,51 +263,7 @@ const LabTable = ({ labInfo }) => {
     );
   };
   
-  const resourcesParticlesOptions = {
-    autoPlay: true,
-    fullScreen: {
-      enable: false,
-      zIndex: 0,
-    },
-    fpsLimit: 60,
-    interactivity: {
-      events: {
-        onClick: {
-          enable: true,
-          mode: 'push',
-        },
-      },
-      modes: {
-        push: {
-          quantity: 4,
-        },
-      },
-      detectsOn: 'window',
-    },
-    particles: {
-      color: {
-        value: ['#FF5733', '#FFC300', '#DAF7A6', '#C70039', '#900C3F'],
-      },
-      shape: {
-        type: 'circle',
-      },
-      size: {
-        animation: {
-          enable: false,
-          minimumValue: 0.1,
-          speed: 40,
-          sync: false,
-        },
-        random: true,
-        value: 5,
-      },
-      move: {
-        enable: true,
-        speed: 2,
-        outMode: 'out',
-      },
-    },
-  };
+ 
 
 
   
@@ -308,10 +274,7 @@ export default function Notes() {
     await loadFull(engine);
   };
 
-  const particlesInit2 = async (engine) => {
-    // Initialize the tsParticles instance (engine) here, adding custom shapes or presets
-    await loadFull(engine);
-  };
+
   const particlesLoaded = async (container) => {
     // Particles are loaded, you can customize the container if needed
   };
@@ -471,10 +434,7 @@ export default function Notes() {
   const particlesBackground = (
     <Particles options={options} init={particlesInit} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }} />
   );
-    // @ts-ignore
-  const resourcesParticlesBackground = (
-    <Particles options={options} init={particlesInit} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }} />
-    );
+
 
   return (
     <div>
@@ -496,11 +456,9 @@ export default function Notes() {
     <LabTable labInfo={labInfo} />
     </div>
     <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'start', alignItems: 'center', background: 'linear-gradient(to bottom, #BCD2E8, #91BAD6 )' }}>
-
     <Resources />
     <div>
-    {particlesBackground} 
-
+      
         </div>
 </div>
     </div>
