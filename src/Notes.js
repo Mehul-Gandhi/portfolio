@@ -55,7 +55,7 @@ function CS10Info() {
         </a>
       </div>
       <div className="col-md-3 mb-3 email-link" style={{ fontSize: '18px', justifyContent: 'center' }}>
-        <a href="https://docs.google.com/document/d/1YqugyHgcEWXuCc0BtbX6dzx3ZXixK86SkgJq2dxx9oY/edit" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', fontSize: '18px' }} className="email-link">
+        <a href="https://drive.google.com/drive/folders/1ZHJiGxUUWJ3IuBAamokUPElINW2qsc7w?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', fontSize: '18px' }} className="email-link">
           <FolderSharedIcon sx={{ fontSize: 36, marginBottom: 4 }} className="email-icon" />
           Mehul's Slides
         </a>
@@ -159,7 +159,16 @@ const labInfo = [
     [{name: "Snap! Reference Manual", content: "https://snap.berkeley.edu/snap/help/SnapManual.pdf"}, {name: "Snap! Explained by Scratch", content: "https://en.scratch-wiki.info/wiki/Snap!_(programming_language)"}, {name: "Snap! Backstory", content: "https://www.miosoft.com/blog/snap-programming-for-everyone.html"}]],
     ["Lab 2: Build Your Own Blocks", "https://cs10.org/bjc-r/topic/topic.html?topic=berkeley_bjc/intro_pair/2-loops-variables.topic&course=&novideo&noreading&noassignment", 
 "https://docs.google.com/presentation/u/1/d/1gITpV1ih_BEIyykone5wrDAu_BnzMbiBhQqKe604o30/edit?usp=drive_web&ouid=101261523977890586883",
-[{name: "Snap Tips and Tricks!", content: "https://docs.google.com/document/d/1PcnJHRVdttYCBnfEgfEOadMEI6SBcM18U44xNpr0wK0/edit"}]]
+[{name: "Snap Tips and Tricks!", content: "https://docs.google.com/document/d/1PcnJHRVdttYCBnfEgfEOadMEI6SBcM18U44xNpr0wK0/edit"},
+{name: "Grow a Virtual Flower Field Video", content: "https://youtu.be/VcPc4VVDp2c"}]
+], ["Lab 3: Conditionals, Reporters, and Abstraction", "https://cs10.org/bjc-r/topic/topic.html?topic=berkeley_bjc/intro_pair/2-conditionals-testing-su21.topic&course=cs10_fa21.html&novideo&noreading&noassignment",
+"https://docs.google.com/presentation/d/1ypGhgjeqjGkhnLNGHrQMS8OMsE6knKRSUyPWiaQ6Lgw/edit?usp=sharing", [
+  {name: "Snap! Reference Manual", content: "https://snap.berkeley.edu/snap/help/SnapManual.pdf"}, {name: "Spring 2020 Quest Exam Questions 3-8", content: "https://drive.google.com/file/d/1sCleoTMSogFmyihz1-ns71riunWtl1ir/view"},
+   {name: "Spring 2020 Quest Exam Solutions", content: "https://drive.google.com/file/d/1lSs3TXCJrqB22zgLBByZTI1-5ITqfE9K/view"}
+
+]
+
+]
 
 ];
 
