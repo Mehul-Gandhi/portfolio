@@ -168,6 +168,12 @@ const labInfo = [
 
 ]
 
+], ["Lab 4: Lists & HOFs", "https://cs10.org/bjc-r/topic/topic.html?topic=berkeley_bjc/lists/lists-I.topic&course=&novideo&noreading&noassignment",
+"https://docs.google.com/presentation/d/1ShcSFWgLKo_tNancSnqx-aUwOC895zUlH0YhYcR_ruE/edit", [
+  {name: "Yolanda's For Loop Guide", content: "https://docs.google.com/document/u/1/d/e/2PACX-1vQYoK-JYX_voUwliAbcn1oyvvgZSurn2C1E72Y8Qf9HeFTr2fFBbgPxpnYTMaR0Rkn82F8-Fq7QxzK6/pub"},
+  {name: "Enhanced Map, Keep, and Combine", content: "https://forum.snap.berkeley.edu/t/enhanced-map-keep-find-first/1057"}
+]
+
 ]
 
 ];
