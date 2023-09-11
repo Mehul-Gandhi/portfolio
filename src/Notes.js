@@ -180,7 +180,9 @@ const labInfo = [
   {name: "Binary Search in 4 Minutes", content: "https://youtu.be/fDKIpRe8GW4"}, 
   {name: "Linear Search vs Binary Search", content: "https://herovired.com/learning-hub/blogs/linear-search-vs-binary-search/"}]
 
-]
+], ["Lab 6: Algorithmic Complexity", "https://cs10.org/bjc-r/topic/topic.html?topic=berkeley_bjc/areas/algorithm-complexity.topic&course=&novideo&noreading&noassignment", "https://docs.google.com/presentation/d/1-nlpD1RljPTEPWFDVrUDp6OYb26MUF4JRp4NOtxGQTY/edit#slide=id.g2556a360d4e_0_0", [
+  {name: "Proof of Gaussian Sum 1 to N", content: "https://youtu.be/iubZ_AH5N00"}, {name: "Gauss Sum 1 to 100", content: "https://youtu.be/jUz0jJm73aQ"}, {name: "Gauss Arithmetic Sequences": content: "https://mathbitsnotebook.com/Algebra2/Sequences/SSGauss.html"},
+]]
 
 ];
 
