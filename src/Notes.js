@@ -178,7 +178,8 @@ const labInfo = [
 "https://docs.google.com/presentation/d/1-nlpD1RljPTEPWFDVrUDp6OYb26MUF4JRp4NOtxGQTY/edit#slide=id.g2556a360d4e_0_0",
 [{name: "Search Algorithms and Efficiency", content: "https://youtu.be/XgAqlz_yl9s"},
   {name: "Binary Search in 4 Minutes", content: "https://youtu.be/fDKIpRe8GW4"}, 
-  {name: "Linear Search vs Binary Search", content: "https://herovired.com/learning-hub/blogs/linear-search-vs-binary-search/"}]
+  {name: "Linear Search vs Binary Search", content: "https://herovired.com/learning-hub/blogs/linear-search-vs-binary-search/"},
+{name: "Binary Search is Logarithmic", content: "http://myithelpcentral.blogspot.com/2015/09/o-logn-notation-explanation-for-binary.html"}]
 
 ], ["Lab 6: Algorithmic Complexity", "https://cs10.org/bjc-r/topic/topic.html?topic=berkeley_bjc/areas/algorithm-complexity.topic&course=&novideo&noreading&noassignment", "https://docs.google.com/presentation/d/1-nlpD1RljPTEPWFDVrUDp6OYb26MUF4JRp4NOtxGQTY/edit#slide=id.g2556a360d4e_0_0", [
   {name: "Proof of Gaussian Sum 1 to N", content: "https://youtu.be/iubZ_AH5N00"}, {name: "Gauss Sum 1 to 100", content: "https://youtu.be/jUz0jJm73aQ"}, {name: "Gauss Arithmetic Sequences", content: "https://mathbitsnotebook.com/Algebra2/Sequences/SSGauss.html"},
