@@ -183,7 +183,8 @@ const labInfo = [
 
 ], ["Lab 6: Algorithmic Complexity", "https://cs10.org/bjc-r/topic/topic.html?topic=berkeley_bjc/areas/algorithm-complexity.topic&course=&novideo&noreading&noassignment", "https://docs.google.com/presentation/d/1-nlpD1RljPTEPWFDVrUDp6OYb26MUF4JRp4NOtxGQTY/edit#slide=id.g2556a360d4e_0_0", [
   {name: "Proof of Gaussian Sum 1 to N", content: "https://youtu.be/iubZ_AH5N00"}, {name: "Gauss Sum 1 to 100", content: "https://youtu.be/jUz0jJm73aQ"}, {name: "Gauss Arithmetic Sequences", content: "https://mathbitsnotebook.com/Algebra2/Sequences/SSGauss.html"},
-]]
+]], ["Lab 7. Testing + Proj 3", "https://cs10.org/bjc-r/cur/programming/2048-testing/intro_to_proj3.html?topic=berkeley_bjc%2F2048-testing%2F2048.topic&course&novideo&noreading&noassignment", "https://docs.google.com/presentation/d/1cSTH_zu5N2toeviR6QNWqDuWP_AMvZlXaxOE2yphwZU/edit?usp=sharing",
+[{name: "Merge up Algorithm", content: "https://steven.codes/blog/cs10/2048-merge/"}, {name: "Play 2048", content: "https://play2048.co/"}]]
 
 ];
 
