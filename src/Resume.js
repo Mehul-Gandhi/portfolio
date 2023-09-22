@@ -132,7 +132,7 @@ const Resume = () => {
                     University of California Berkeley, Expected Graduation: December 2024</p>
                     <p>B.A. Double Major in <em>
                         Computer Science &amp; Data Science</em>,
-                         GPA: 3.46/4</p></div></div>
+                         GPA: 3.48/4</p></div></div>
                          <div className="mb-4"><div className="row"> {/* <-- hr --> */}
             <div className="col-12"><h3>
                 <svg aria-hidden="true" 
