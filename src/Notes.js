@@ -187,7 +187,12 @@ const labInfo = [
 [{name: "Merge up Algorithm", content: "https://steven.codes/blog/cs10/2048-merge/"}, {name: "Play 2048", content: "https://play2048.co/"}]],
 ["Lab 8: Boards", "https://cs10.org/bjc-r/llab/html/topic.html?topic=berkeley_bjc%2Flists%2Ftic-tac-toe.topic&course&novideo&noreading&noassignment",
  "https://docs.google.com/presentation/d/1GcjHuTQhwgstTHuBL7IFWgMuyAlMbE_xt9yNFFnBbFs/edit#slide=id.g255f4f1f178_0_0",
-[{name: "TicTacToe in Snap", content: "https://forum.snap.berkeley.edu/t/tic-tac-toe/1272"}]]
+[{name: "TicTacToe in Snap", content: "https://forum.snap.berkeley.edu/t/tic-tac-toe/1272"}]],
+["Lab 9: Trees and Fractals", "https://cs10.org/bjc-r/topic/topic.html?topic=berkeley_bjc/recur/recursion-trees-fractals.topic&course=&novideo&noreading&noassignment", 
+"https://docs.google.com/presentation/d/1RJ61d7xOv9qG_Zxw1xSHXXnZ7PQDK7jpCilEgbiEZP8/edit?usp=sharing",
+[{name: "Mehul's Fractal Review Video", content: "https://youtu.be/ioOvJ9S268s"}, {name: "Mehul's Fractal Review Slides", content: "https://docs.google.com/presentation/d/10TgeE-YHSQOW5JmK9qf9BBfD83pj9zDcuZ8SnGyR7P4/edit?usp=sharing"}, {name: "Cool Fractals Showcase", content: "https://snap.berkeley.edu/collection?username=snapcloud&collection=Fractals"}
+, {name: "Recursion and Fractals Lab Guide", content: "https://docs.google.com/document/d/1x4O7CgRWaFwQrGGesbTD-U_dKph1lrMI-hosDJZm_QA/edit#heading=h.cq9u2m3lwu44"}]
+]
 
 ];
 
@@ -493,7 +498,7 @@ export default function Notes() {
   return (
     <div>
 
-<div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+<div style={{ height: 'auto', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
       <CS10Info />
       <div>
       {particlesBackground}
@@ -505,7 +510,7 @@ export default function Notes() {
     <AnnouncementsContainer />
 
     </div>
-    <div style={{ height: 'auto', display: 'flex', flexDirection: 'column', justifyContent: 'start', alignItems: 'center', background: 'linear-gradient(to bottom, #BCD2E8, #91BAD6 )' }}>
+    <div style={{ height: 'auto', display: 'flex', flexDirection: 'column', justifyContent: 'start', alignItems: 'center', background: 'linear-gradient(to bottom, #BCD2E8, #91BAD6 )', padding: '50px'}}>
 
     <LabTable labInfo={labInfo} />
     </div>
