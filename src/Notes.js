@@ -505,11 +505,11 @@ export default function Notes() {
     <AnnouncementsContainer />
 
     </div>
-    <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'start', alignItems: 'center', background: 'linear-gradient(to bottom, #BCD2E8, #91BAD6 )' }}>
+    <div style={{ height: 'auto', display: 'flex', flexDirection: 'column', justifyContent: 'start', alignItems: 'center', background: 'linear-gradient(to bottom, #BCD2E8, #91BAD6 )' }}>
 
     <LabTable labInfo={labInfo} />
     </div>
-    <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'start', alignItems: 'center', background: 'linear-gradient(to bottom, #BCD2E8, #91BAD6 )' }}>
+    <div style={{ height: 'auto', display: 'flex', flexDirection: 'column', justifyContent: 'start', alignItems: 'center', background: 'linear-gradient(to bottom, #BCD2E8, #91BAD6 )' }}>
     <Resources />
     <div>
       
