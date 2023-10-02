@@ -192,6 +192,12 @@ const labInfo = [
 "https://docs.google.com/presentation/d/1RJ61d7xOv9qG_Zxw1xSHXXnZ7PQDK7jpCilEgbiEZP8/edit?usp=sharing",
 [{name: "Mehul's Fractal Review Video", content: "https://youtu.be/ioOvJ9S268s"}, {name: "Mehul's Fractal Review Slides", content: "https://docs.google.com/presentation/d/10TgeE-YHSQOW5JmK9qf9BBfD83pj9zDcuZ8SnGyR7P4/edit?usp=sharing"}, {name: "Cool Fractals Showcase", content: "https://snap.berkeley.edu/collection?username=snapcloud&collection=Fractals"}
 , {name: "Recursion and Fractals Lab Guide", content: "https://docs.google.com/document/d/1x4O7CgRWaFwQrGGesbTD-U_dKph1lrMI-hosDJZm_QA/edit#heading=h.cq9u2m3lwu44"}]
+
+], 
+["Lab 10: Recursive Reporters", "https://cs10.org/bjc-r/llab/html/topic.html?topic=berkeley_bjc%2Frecur%2Frecursive-reporters-part1.topic&course&novideo&noreading&noassignment", "https://docs.google.com/presentation/d/1imtVgCf37Uph64xbhZS3VNhfQi3aEu-Eb_LGNoWKU4M/edit#slide=id.g255c8df5a82_1_515",
+[{name: "MergeSort Neetcode", content: "https://youtu.be/MsYZSinhuFo"},
+ {name: "Recursion and Fractals", content: "https://docs.google.com/document/d/1x4O7CgRWaFwQrGGesbTD-U_dKph1lrMI-hosDJZm_QA/edit#heading=h.cq9u2m3lwu44"}, 
+ {name: "Vedansh's Tree Recursion Lecture Slides", content: "https://drive.google.com/file/d/1eYRjtxWxsrzV0yi58__UmVdREwgaBcFu/view"}]
 ]
 
 ];
