@@ -204,7 +204,10 @@ const labInfo = [
  "https://docs.google.com/presentation/d/1yTX6EqdAWqYTKSFIpylusM4ifQYVPj08CQFAqL7RtM0/edit#slide=id.g25759234bcb_0_165",
  [{name: "Pandigital Number", content: "https://en.wikipedia.org/wiki/Pandigital_number#:~:text=In%20mathematics%2C%20a%20pandigital%20number,pandigital%20number%20in%20base%2010."}, 
 {name: "Snap Manual Page 26 (Pipe)", content: "https://snap.berkeley.edu/snap/help/SnapManual.pdf"} ]
-]
+],
+["Lab 12: Welcome to Python", "https://cs10.org/bjc-r/llab/html/topic.html?topic=berkeley_bjc%2Fpython%2Fbesides-blocks-welcome-parsons.topic&course&novideo&noreading&noassignment"
+, "https://docs.google.com/presentation/d/1DyULATDjQgBpYFuRArorWlDEcZFkjjRuCkFrVbwWdJc/edit#slide=id.g24c8f6131ef_0_91",
+[{name: "For Loops", content: "https://www.w3schools.com/python/python_for_loops.asp"}, {name: "PythonTutor", content: "https://pythontutor.com/"}, {name: "Exponent in O(log n) time", content: "https://www.ideserve.co.in/learn/how-to-find-the-power-of-a-number"}]]
 
 ];
 
