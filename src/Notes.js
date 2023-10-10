@@ -198,6 +198,12 @@ const labInfo = [
 [{name: "MergeSort Neetcode", content: "https://youtu.be/MsYZSinhuFo"},
  {name: "Recursion and Fractals", content: "https://docs.google.com/document/d/1x4O7CgRWaFwQrGGesbTD-U_dKph1lrMI-hosDJZm_QA/edit#heading=h.cq9u2m3lwu44"}, 
  {name: "Vedansh's Tree Recursion Lecture Slides", content: "https://drive.google.com/file/d/1eYRjtxWxsrzV0yi58__UmVdREwgaBcFu/view"}]
+],
+["Lab 11: HOFs + Functions as Data",
+ "https://cs10.org/bjc-r/llab/html/topic.html?topic=berkeley_bjc%2Fhofs%2Fhofs-practice.topic&course&novideo&noreading&noassignment", 
+ "https://docs.google.com/presentation/d/1yTX6EqdAWqYTKSFIpylusM4ifQYVPj08CQFAqL7RtM0/edit#slide=id.g25759234bcb_0_165",
+ [{name: "Pandigital Number", content: "https://en.wikipedia.org/wiki/Pandigital_number#:~:text=In%20mathematics%2C%20a%20pandigital%20number,pandigital%20number%20in%20base%2010."}, 
+{name: "Snap Manual Page 26 (Pipe)", content: "https://snap.berkeley.edu/snap/help/SnapManual.pdf"} ]
 ]
 
 ];
