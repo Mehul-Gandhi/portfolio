@@ -207,7 +207,9 @@ const labInfo = [
 ],
 ["Lab 12: Welcome to Python", "https://cs10.org/bjc-r/llab/html/topic.html?topic=berkeley_bjc%2Fpython%2Fbesides-blocks-welcome-parsons.topic&course&novideo&noreading&noassignment"
 , "https://docs.google.com/presentation/d/1DyULATDjQgBpYFuRArorWlDEcZFkjjRuCkFrVbwWdJc/edit#slide=id.g24c8f6131ef_0_91",
-[{name: "For Loops", content: "https://www.w3schools.com/python/python_for_loops.asp"}, {name: "PythonTutor", content: "https://pythontutor.com/"}, {name: "Exponent in O(log n) time", content: "https://www.ideserve.co.in/learn/how-to-find-the-power-of-a-number"}]]
+[{name: "For Loops", content: "https://www.w3schools.com/python/python_for_loops.asp"}, {name: "PythonTutor", content: "https://pythontutor.com/"}, {name: "Exponent in O(log n) time", content: "https://www.ideserve.co.in/learn/how-to-find-the-power-of-a-number"}]],
+["Lab 13: Data Structures in Python", "https://cs10.org/bjc-r/topic/topic.html?topic=berkeley_bjc/python/besides-blocks-data-struct.topic&course=&novideo&noreading&noassignment", "https://docs.google.com/presentation/d/1SYFHdItKzYc9swbNsWfbjuxlm2NrIMVmeFkz0Y1SKtw/edit?usp=sharing",
+[{name: "Dictionaries", content: "https://realpython.com/python-dicts/"}, {name: "List Comprehension", content: "https://realpython.com/list-comprehension-python/"}, {name: "Using 'break' in Python", content: "https://www.coursera.org/tutorials/python-break#:~:text=In%20Python%2C%20break%20allows%20you,execution%20of%20the%20innermost%20loop."}]]
 
 ];
 
