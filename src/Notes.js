@@ -210,7 +210,9 @@ const labInfo = [
 [{name: "For Loops", content: "https://www.w3schools.com/python/python_for_loops.asp"}, {name: "PythonTutor", content: "https://pythontutor.com/"}, {name: "Exponent in O(log n) time", content: "https://www.ideserve.co.in/learn/how-to-find-the-power-of-a-number"}]],
 ["Lab 13: Data Structures in Python", "https://cs10.org/bjc-r/topic/topic.html?topic=berkeley_bjc/python/besides-blocks-data-struct.topic&course=&novideo&noreading&noassignment", "https://docs.google.com/presentation/d/1SYFHdItKzYc9swbNsWfbjuxlm2NrIMVmeFkz0Y1SKtw/edit?usp=sharing",
 [{name: "Dictionaries", content: "https://realpython.com/python-dicts/"}, {name: "List Comprehension", content: "https://realpython.com/list-comprehension-python/"}, {name: "Using 'break' in Python", content: "https://www.coursera.org/tutorials/python-break#:~:text=In%20Python%2C%20break%20allows%20you,execution%20of%20the%20innermost%20loop."}]]
-
+,
+["Lab 14: Object-Oriented Programming", "https://cs10.org/bjc-r/cur/programming/python/object-oriented-programming-joshhug/oop_intro.html?topic=berkeley_bjc%2Fpython%2Fbesides-blocks-oop-joshhug-edition.topic&course&novideo&noreading&noassignment", "https://docs.google.com/presentation/d/1m8z8r1hWa_TKwXYhV6fg4NWRwqznAJ237yrNrpzHUpw/edit?usp=sharing",
+[{name: "__str__ and __repr__ methods", content: "https://www.digitalocean.com/community/tutorials/python-str-repr-functions"}, {name: "__eq__ method", content: "https://www.geeksforgeeks.org/difference-between-__eq__-vs-is-vs-in-python/"}]]
 ];
 
 const LabTable = ({ labInfo }) => {
