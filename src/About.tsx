@@ -236,7 +236,7 @@ const AboutMe = () => {
         <div className="row">
           <div className="col-md-8">
             <p className="fs-5">
-              My name is Mehul Gandhi! I was born and raised in Hayward, California. I'm currently a rising senior at UC Berkeley majoring in Computer Science and Data Science.
+              My name is Mehul Gandhi! I was born and raised in Hayward, California. I'm a senior at UC Berkeley majoring in Computer Science and Data Science and I graduate in December 2024.
               I am currently on course staff for ‎ 
               <span style={{ color: 'yellow' }}>
                 <a href="https://cs10.org" style={{ textDecoration: 'none', color: 'yellow' }}>
