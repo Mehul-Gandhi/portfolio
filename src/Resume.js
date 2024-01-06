@@ -157,19 +157,19 @@ const Resume = () => {
                         "Utilize the Google Sheets API to fetch and push data from Google Sheets, including critical match information"]} 
                          skills="HTML, CSS, JavaScript, Python, Flask"
                          />
-                         <ExperienceEntry role="CS10 Head Teaching Assistant" company={<a href="https://cs10.org"
-                          target="_blank" rel="noopener noreferrer" 
-                        style={{ textDecoration: 'none'}}>
-                        UC Berkeley EECS Department </a>}  time="June 2023 - Present"
-                         description={["Collaborated with team members to create comprehensive unit tests and to ensure autograder functionality for Python assignments, resulting in an 80% reduction in grading time",
-                        "Revised lab assignment specifications to enhance clarity and improve student performance of a class with 250+ undergraduate students, resulting in a 75% increase in average assignment scores and higher student satisfaction"]} 
-                         skills="HTML, CSS, JavaScript, Python, Snap!"
-                         />
-                         <ExperienceEntry role="Undergraduate Researcher" company="UC Berkeley EECS Department" time="June 2023 - Present"
+                      <ExperienceEntry role="Undergraduate Researcher" company="UC Berkeley EECS Department" time="January 2023 - Present"
                          description={["Research combinatorial and computational game theory for Berkeley's GamesCrafters group with Dr. Dan Garcia",
                         "Collaborate with a team of 5+ to redesign the website and create visualizations for computational games",
                         "Develop autonomous opponents in abstract strategy games with a focus on balancing memory usage and time"]} 
                          skills="Python, C, HTML, CSS, JavaScript"
+                         />
+                         <ExperienceEntry role="CS10 Head Teaching Assistant" company={<a href="https://cs10.org/su23"
+                          target="_blank" rel="noopener noreferrer" 
+                        style={{ textDecoration: 'none'}}>
+                        UC Berkeley EECS Department </a>}  time="June 2023 - December 2023"
+                         description={["Collaborated with team members to create comprehensive unit tests and to ensure autograder functionality for Python assignments, resulting in an 80% reduction in grading time",
+                        "Revised lab assignment specifications to enhance clarity and improve student performance of a class with 250+ undergraduate students, resulting in a 75% increase in average assignment scores and higher student satisfaction"]} 
+                         skills="HTML, CSS, JavaScript, Python, Snap!"
                          />
                          <ExperienceEntry role="Activities Director" company={<a href="https://ieee.berkeley.edu/"
                           target="_blank" rel="noopener noreferrer" 
