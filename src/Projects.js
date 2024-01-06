@@ -118,7 +118,11 @@ details: [], skills: ["C"], links: [{name: "Request Access", content: mail}, {na
 {name: "CS61CPU", class: "CS61C: Great Ideas in Computer Architecture (Machine Structures)", description: "The CS61CPU project is an intricate endeavor focused on enhancing a RISC-V CPU design with a 2-stage pipelining approach. The project delves into various\
  facets of CPU architecture, including instruction set expansion through the integration of new instructions. Through rigorous testing and simulation, the CS61CPU project aims to create a refined and functional CPU capable of effectively executing a diverse set of\
   instructions with notable performance gains attributed to pipelining.", details: [], skills: ["Logism", "RISC-V"], links: [{name: "Request Access", content: mail}, {name: "Project Spec", content: "https://inst.eecs.berkeley.edu/~cs61c/su21/projects/proj3/"}], date: "2022-07-25",
-images: ["/cpu/proj3_pipeline.png", "/cpu/error_wire_2.png"]}
+images: ["/cpu/proj3_pipeline.png", "/cpu/error_wire_2.png"],
+}, {name: "Board Game Analysis using Computer Vision", class: "Research Project", description:  "Utilizing Python and OpenCV, the system detects game pieces and grid arrangements, constructs position strings to represent the board states, and identifies changes between successive frames to determine moves made during play. Using this detection software, we allow a robot arm to play a game perfectly against a human player", 
+details: [], skills: ["Python", "Jupyter", "OpenCV"],
+links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/gametheory-cv"}, {name: "Research Group", content: "http://gamescrafters.berkeley.edu/"}], date: "2023-12-19", images: ["/connect4/visualValueHistory.png", "/connect4/ttt.png", "/connect4/ttt.png"]},
+
     ].sort((a, b) => {
         const dateA = new Date(a.date);
         const dateB = new Date(b.date);
