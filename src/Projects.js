@@ -121,7 +121,7 @@ details: [], skills: ["C"], links: [{name: "Request Access", content: mail}, {na
 images: ["/cpu/proj3_pipeline.png", "/cpu/error_wire_2.png"],
 }, {name: "Board Game Analysis using Computer Vision", class: "Research Project", description:  "Utilizing Python and OpenCV, the system detects game pieces and grid arrangements, constructs position strings to represent the board states, and identifies changes between successive frames to determine moves made during play. Using this detection software, we allow a robot arm to play a game perfectly against a human player", 
 details: [], skills: ["Python", "Jupyter", "OpenCV"],
-links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/gametheory-cv"}, {name: "Research Group", content: "http://gamescrafters.berkeley.edu/"}], date: "2023-12-19", images: ["/connect4/visualValueHistory.png", "/connect4/ttt.png", "/connect4/ttt.png"]},
+links: [{name: "GitHub", content: "https://github.com/Mehul-Gandhi/gametheory-cv"}, {name: "Research Group", content: "http://gamescrafters.berkeley.edu/"}], date: "2023-12-19", images: ["/connect4/visualValueHistory.png", "/connect4/ttt.png", "/connect4/connect4.png"]},
 
     ].sort((a, b) => {
         const dateA = new Date(a.date);
