@@ -237,13 +237,13 @@ const AboutMe = () => {
           <div className="col-md-8">
             <p className="fs-5">
               My name is Mehul Gandhi! I was born and raised in Hayward, California. I'm a senior at UC Berkeley majoring in Computer Science and Data Science and I graduate in December 2024.
-              I am currently on course staff for ‎ 
+              I am currently a Software Engineering Intern for ‎ 
               <span style={{ color: 'yellow' }}>
-                <a href="https://cs10.org" style={{ textDecoration: 'none', color: 'yellow' }}>
-                    CS10: The Beauty and Joy of Computing 
+                <a href="https://relyestate.com/" style={{ textDecoration: 'none', color: 'yellow' }}>
+                    Rely 
                 </a>
-              </span> where I introduce students to Snap! and Python
-              and teach concepts such as tree recursion, algorithmic complexity, and concurrency.
+              </span> where I am designing the backend architecture with a team of 6 using AWS. Our goal is to create a platform for
+              renters to easily apply to places and we plan to create a social networking platform for renters and landlords.
             </p>
             <p className="fs-5">
               I am also involved with ‎ 
@@ -256,10 +256,10 @@ const AboutMe = () => {
               in the Bay Area, where I am the frontend developer.
             </p>
             <p className="fs-5"> 
-              In addition to my interests in teaching and robotics, I am interested in artificial intelligence and fullstack development!
+              In addition to my interests in cloud computing and robotics, I am interested in artificial intelligence and fullstack development!
             </p>
             <p className="fs-5">
-              If you find yourself interested in artificial intelligence or education, and want to grab coffee and chat, feel free to reach out!
+              If you find yourself interested in artificial intelligence or cloud computing, and want to grab coffee and chat, feel free to reach out!
             </p>
             <div className="d-flex">
               <a href="/resume" className="btn mx-1 btn-primary btn-lg" type="button">Resume</a>
