@@ -239,11 +239,10 @@ const AboutMe = () => {
               My name is Mehul Gandhi! I was born and raised in Hayward, California. I'm a senior at UC Berkeley majoring in Computer Science and Data Science and I graduate in December 2024.
               I am currently a Software Engineering Intern for ‎ 
               <span style={{ color: 'yellow' }}>
-                <a href="https://relyestate.com/" style={{ textDecoration: 'none', color: 'yellow' }}>
-                    Rely 
+                <a href="https://aws.amazon.com/iam/" style={{ textDecoration: 'none', color: 'yellow' }}>
+                    Amazon 
                 </a>
-              </span> where I am designing the backend architecture with a team of 6 using AWS. Our goal is to create a platform for
-              renters to easily apply to places and we plan to create a social networking platform for renters and landlords.
+              </span> where I am working on the AWS Identity Access Management team.
             </p>
             <p className="fs-5">
               I am also involved with ‎ 
@@ -253,7 +252,7 @@ const AboutMe = () => {
                 </a>
               </span>
                , a robotics club that aims to introduce a STEM education to high school students
-              in the Bay Area, where I am the frontend developer.
+              in the Bay Area, where I am a frontend developer.
             </p>
             <p className="fs-5"> 
               In addition to my interests in cloud computing and robotics, I am interested in artificial intelligence and fullstack development!
