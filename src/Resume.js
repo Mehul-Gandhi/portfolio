@@ -147,6 +147,17 @@ const Resume = () => {
                         Experience</h3>
                         </div>
                         <hr />
+                        <ExperienceEntry role="Software Engineer Intern" company={<a href="https://relyestate.com/" target="_blank" rel="noopener noreferrer" 
+                  style={{ textDecoration: 'none'}}>
+                    Rely</a>}
+                     time="January 2024 - April 2024"
+                         description={
+                          ["Created the landing page using React, Bootstrap, and MaterialUI, which is used by 1000+ renters and landlords to sign up on the waiting list",
+                          "Designed the waiting list using AWS S3 and Lambda for users to receive email notifications"
+                          ]
+                      } 
+                         skills="Python, React, AWS"
+                         />
                         <ExperienceEntry role="Software Developer" company={<a href="https://pioneers.berkeley.edu/" target="_blank" rel="noopener noreferrer" 
                   style={{ textDecoration: 'none'}}>
                     Pioneers in Engineering</a>}
@@ -157,7 +168,7 @@ const Resume = () => {
                         "Utilize the Google Sheets API to fetch and push data from Google Sheets, including critical match information"]} 
                          skills="HTML, CSS, JavaScript, Python, Flask"
                          />
-                      <ExperienceEntry role="Undergraduate Researcher" company="UC Berkeley EECS Department" time="January 2023 - Present"
+                      <ExperienceEntry role="Undergraduate Researcher" company="UC Berkeley EECS Department" time="August 2023 - December 2023"
                          description={["Research combinatorial and computational game theory for Berkeley's GamesCrafters group with Dr. Dan Garcia",
                         "Collaborate with a team of 5+ to redesign the website and create visualizations for computational games",
                         "Develop autonomous opponents in abstract strategy games with a focus on balancing memory usage and time"]} 
