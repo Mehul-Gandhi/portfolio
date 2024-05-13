@@ -73,7 +73,27 @@ const Classes = () => {
          skills: ""},
         {code: "DATA140", title: "Probability for Data Science", link: "http://prob140.org/", time: "Fall 2023", 
         description: "An introduction to probability, emphasizing the combined use of mathematics and programming to solve problems. Random variables, discrete and continuous families of distributions. Bounds and approximations. Dependence, conditioning, Bayes methods. Convergence, Markov chains. Least squares prediction. Random permutations, symmetry, order statistics. Use of numerical computation, graphics, simulation, and computer algebra.", 
-        skills: "Python"}
+        skills: "Python"},
+        {code: "IEOR162", title: "Linear Programming and Network Flows", link: "https://classes.berkeley.edu/content/2024-spring-indeng-162-001-lec-001", time: "Spring 2024",
+          description: "This course addresses modeling and algorithms for optimization of linear constrained optimization problems.  The simplex method; theorems of duality; complementary slackness.  Applications in production planning and resource allocation. Graph and network problems as linear programs with integer solutions. Algorithms for selected network flow problems.  Transportation and logistics problems.  Dynamic programming and its role in applications to shortest paths, project management and equipment replacement.",
+          skills: "Python, AMPL"
+        },
+        {
+          code: "INFO159",
+          title: "Natural Language Processing",
+          link: "https://ucbnlp24.github.io/webpage/",
+          time: "Spring 2024",
+          description: "This course introduces students to natural language processing and exposes them to the variety of methods available for reasoning about text in computational systems. NLP is deeply interdisciplinary, drawing on both linguistics and computer science, and helps drive much contemporary work in text analysis (as used in computational social science, the digital humanities, and computational journalism). We will focus on major algorithms used in NLP for various applications (part-of-speech tagging, parsing, coreference resolution, machine translation) and on the linguistic phenomena those algorithms attempt to model. Students will implement algorithms and create linguistically annotated data on which those algorithms depend.",
+          skills: "Python"
+        },
+        {
+          code: "DATA102",
+          title: "Data, Inferences, and Decisions",
+          link: "https://data102.org/sp24/",
+          time: "Spring 2024",
+          description: "This course develops the probabilistic foundations of inference in data science, and builds a comprehensive view of the modeling and decision-making life cycle in data science including its human, social, and ethical implications. Topics include: frequentist and Bayesian decision-making, permutation testing, false discovery rate, probabilistic interpretations of models, Bayesian hierarchical models, basics of experimental design, confidence intervals, causal inference, Thompson sampling, optimal control, Q-learning, differential privacy, clustering algorithms, recommendation systems and an introduction to machine learning tools including decision trees, neural networks and ensemble methods.",
+          skills: "Python, Jupyter, Pandas"
+        }
     ];
     classes = [...classes].reverse();
 
